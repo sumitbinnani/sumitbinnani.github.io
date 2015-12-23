@@ -1,0 +1,12 @@
+.box { background:white; margin-top:70px; }
+.box > .image { z-index: 2; margin: auto; margin-top:-60px; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #4466e4; vertical-align: middle; }
+
+
+.box > .image > i { font-size: 36px !important; color: #fff !important;}
+
+.box > h3.title { padding-top: 12px; padding-bottom:3px; margin:0; color: #222; }
+.box > p.institution { color: #222; font-weight: 700; padding-bottom:24px;}
+.box > p.score {position:absolute; bottom:0; left:0; width:100%;}
+
+.box > a {  color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none; }
+.box .space { height: 30px; }

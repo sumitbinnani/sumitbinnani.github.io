@@ -1,0 +1,110 @@
+html, body{
+	height: 100%;
+	min-height: 100%;
+}
+
+body{
+	padding-top: 50px;
+}
+
+.mobile body {
+  overflow: hidden;
+}
+
+#wrapper{
+	height:100%;
+	min-height:100%;
+}
+
+#scroller{
+	height:100%;
+	min-height:100%;
+}
+
+.mobile #wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.fullPage{
+	position:relative;
+	height:100%;
+	min-height:100%;
+	width:100%;	
+}
+
+.center{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	top:45%;	
+	text-align:center;
+}
+
+.effect1{
+	position: absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;	
+	background-image:url('../img/effect.png');
+}
+
+.effect2{
+	z-index:0;
+	position: absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background-image:url('../img/slide1_texture.jpg');
+	background-size: cover !important;
+	background-attachment: fixed !important;
+	opacity:0.5;
+}
+
+.effect3{
+	position: absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background-image:url('../img/effect3.png')
+}
+
+.tagContainer{
+	width:700px;
+	margin:auto;
+}
+
+.fixed{
+	position:relative; top:200px !important; left:0px !important; opacity:1 !important; font-size:4em !important; z-index:10 !important;
+}
+
+#section1{
+	display: table;
+	vertical-align: middle;
+	background-image:url('../img/slide1_bg.jpg');
+	background-size: cover !important;
+	background-attachment: fixed !important;
+	width:100%;
+	text-align:center;
+	color: white;
+}
+
+#section1 h1{
+	font-size: 4em;
+	font-color:red;
+}
+
+#section2{
+	position:relative;
+	background-image:url('../img/slide2_bg.jpg');
+	background-size: cover !important;
+	background-attachment: fixed !important;
+	width:100%;
+	text-align:center;
+}
