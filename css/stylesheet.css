@@ -114,6 +114,17 @@ body{
     text-justify: inter-word;
 }
 
+#skills h1{
+	text-align:center;
+	color:white;
+}
+
+#skills .progress-bar{
+	font-weight:700;
+	text-align:left;
+	padding-left: 10px;
+}
+
 
 #workExperience{
 	position:relative;
@@ -151,6 +162,20 @@ body{
 	color: black;
 	text-shadow: 0 0 10px rgb(192, 156, 108) , 0 0 20px rgb(180, 134, 85) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #905A1E , 0 0 70px #985E17 , 0 0 80px #A06F31 , 0 0 100px #9C6B23;
 }
+
+#extraCurriculars{
+	background-image:url('../img/extra.png');	
+	text-align: center;
+	padding:50px;
+}
+
+#extraCurriculars .page-header{
+	border-bottom: 1px solid gray;
+}
+#extraCurriculars h2, ul{
+	text-align:justify !important;
+}
+
 .text-center{
 	text-align:center !important;
 }

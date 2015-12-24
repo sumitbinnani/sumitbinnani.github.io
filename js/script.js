@@ -19,9 +19,12 @@ $(document).ready(function() {
 	loadEducation();
 	loadSchAchievements();
 	loadCoursework();
+	loadCertifications();
 	loadWorkExp();
 	loadProjects();
 	loadPORS();
+	loadExtraActivities();
+	loadExtraAchievements();
 });
 
 function setStellar(){
@@ -65,8 +68,11 @@ var workExp = [];
 var education = [];
 var schAchievements =[];
 var coursework = [];
+var certifications = [];
 var projects = [];
 var pors = [];
+var activities = [];
+var achievements = [];
 
 function loadPORS(){
 	// Make sure it is public or set to Anyone with link can view
@@ -201,6 +207,65 @@ function loadCoursework(){
 	
 }
 
+function loadCertifications(){
+	
+	// Make sure it is public or set to Anyone with link can view
+	var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/5/public/values?alt=json";
+	
+	var jqxhr = $.getJSON(url);
+	
+	// Set another completion function for the request above
+	jqxhr.done(function() {
+		entries = jqxhr.responseJSON.feed.entry;
+		
+		$(entries).each(function(){
+			certifications.push(this.gsx$course.$t);
+		});
+		
+		ko.applyBindings(certifications, document.getElementById("certifications"));
+		$('.info').matchHeight();
+	});
+	
+}
+
+
+function loadExtraActivities(){
+	
+	// Make sure it is public or set to Anyone with link can view
+	var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/8/public/values?alt=json";
+	var jqxhr = $.getJSON(url);
+	
+	// Set another completion function for the request above
+	jqxhr.done(function() {
+		entries = jqxhr.responseJSON.feed.entry;
+		
+		$(entries).each(function(){
+			activities.push(this.gsx$activity.$t);
+		});
+		
+		ko.applyBindings(activities, document.getElementById("activities"));
+	});
+	
+}
+
+function loadExtraAchievements(){
+	
+	// Make sure it is public or set to Anyone with link can view
+	var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/9/public/values?alt=json";
+	var jqxhr = $.getJSON(url);
+	
+	// Set another completion function for the request above
+	jqxhr.done(function() {
+		entries = jqxhr.responseJSON.feed.entry;
+		
+		$(entries).each(function(){
+			achievements.push(this.gsx$achievement.$t);
+		});
+		
+		ko.applyBindings(achievements, document.getElementById("achievements"));
+	});
+	
+}
 function WorkExperience(data) {
 	this.type = data.gsx$type.$t;
     this.startDate = data.gsx$startdate.$t;

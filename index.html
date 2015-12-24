@@ -32,11 +32,9 @@
 				</div>
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-					<!--
+					<ul class="nav navbar-nav navbar-right"><!--
 						<li class="active"><a href="#">Link<span class="sr-only">(current)</span></a></li>
-						<li><a href="#">Link</a></li>
-					-->
+						<li><a href="#">Link</a></li>-->
 					</ul>
 				</div>
 			</div>
@@ -129,7 +127,7 @@
 								data-bind="template: {name: 'academics-template', data: {array: schAchievements,  header: 'Scholastic Achievements',  image: 'fa fa-trophy'}}">	
 						</div>
 						<div id="certifications" class="col-xs-12 col-sm-6 col-lg-4 box"
-								data-bind="template: {name: 'academics-template', data: {array: [1,2,3],  header: 'A Few Online Courses / Certifications',  image: 'fa fa-book'}}">	
+								data-bind="template: {name: 'academics-template', data: {array: certifications,  header: 'A Few Online Courses / Certifications',  image: 'fa fa-book'}}">	
 						</div>
 					</div>	
 
@@ -142,37 +140,29 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="page-header"><h1>Skills</h1></div>
-					
-					<div class="col-md-12" style="height:300px">Timeout! Kindly try after sometime.</div>
-					
-					<!--
-					<div class="col-md-4">
-						<h3>Languages</h3>
-						
+						<div class="col-md-12">
 							<div class="progress">
-							  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-								C/C++/Java
-							  </div>
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+									C, Python, Java, MATLAB
+								</div>
 							</div>
 							<div class="progress">
-							  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-								<span class="sr-only">20% Complete</span>
-							  </div>
+								<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+									Proteus, ModelSIM
+								</div>
 							</div>
 							<div class="progress">
-							  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-								<span class="sr-only">60% Complete (warning)</span>
-							  </div>
+								<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+									R, C++, VB, Android SDK
+								</div>
 							</div>
 							<div class="progress">
-							  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-								<span class="sr-only">80% Complete (danger)</span>
-							  </div>
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+									Verilog, LABView
+								</div>
 							</div>
-						
-					</div>
-					-->
-					
+						</div>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -206,6 +196,26 @@
 						<h1> Positions of Responsibilties </h1>
 					</div>
 					<div class="row row-eq-height" data-bind="template: { name: 'por-template', foreach: pors }"></div>	
+				</div>
+			</div>
+		</div>
+		
+		<div id="extraCurriculars">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="page-header"><h1>Extra Curriculars</h1></div>
+					<div class="col-md-5 col-md-offset-1" id="activities">
+						<h2>Activities</h2>
+						<ul data-bind="foreach: activities">
+							<li data-bind="html: $data">Loading...</li>
+						</ul>						
+					</div>
+					<div class="col-md-5" id="achievements">
+						<h2>Achievements</h2>
+						<ul data-bind="foreach: achievements">
+							<li data-bind="html: $data">Loading...</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -251,6 +261,7 @@
 			</div>
 		</script>
 		
+		<!--#1D4B72-->
 		<script id="project-template"  type="text/html">
             <div class="col-md-3">
 				<div class="tile slideTextUp">
@@ -285,6 +296,7 @@
 			</div>
         </script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.stellar.min.js"></script>
 		<script src="js/jquery.matchHeight-min.js"></script>
