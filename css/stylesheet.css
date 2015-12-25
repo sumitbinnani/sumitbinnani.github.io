@@ -120,6 +120,7 @@ body{
 }
 
 #skills .progress-bar{
+	color:black;
 	font-weight:700;
 	text-align:left;
 	padding-left: 10px;
@@ -145,6 +146,7 @@ body{
 
 #projects [class^='col']{
 	padding:5px;
+	cursor:pointer;
 }
 
 #projects h1{
@@ -152,15 +154,25 @@ body{
 }
 
 #pors{
+	position:relative;
 	background-image:url('../img/mic-1.jpg');
 	background-size: cover !important;
 	background-attachment: fixed !important;
+	width:100%;
 	text-align:center;
 }
 
+#pors [class^='col']{
+	padding:5px;
+}
+
 #pors h1{
-	color: black;
-	text-shadow: 0 0 10px rgb(192, 156, 108) , 0 0 20px rgb(180, 134, 85) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #905A1E , 0 0 70px #985E17 , 0 0 80px #A06F31 , 0 0 100px #9C6B23;
+	color: white;
+	text-shadow: 0 0 20px rgb(93, 76, 56);
+}
+
+#pors .tile{
+	background-color: #AB7A3A;
 }
 
 #extraCurriculars{
