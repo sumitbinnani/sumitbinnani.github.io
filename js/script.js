@@ -1,31 +1,51 @@
 $(document).ready(function() {
-	/*
-	$($('.jVCenter')).each(function(){
-		$(this).css({
-        'position' : 'absolute',
-        //'left' : '50%',
-        'top' : '50%',
-        //'margin-left' : -$('.jVCenter').width()/2,
-        'margin-top' : -$(this).height()/2
-    });
-	});*/
-	
-	//68, 132, 228, 0.69
-	//474747
-
-	
-	
+	timer = setInterval(function(){
+		if(count==0){
+			$("#loader").fadeOut();
+			clearInterval(timer);
+			
+			var $root = $('html, body');
+				$('a').click(function() {
+					var href = $.attr(this, 'href');
+					$root.animate({
+					scrollTop: $(href).offset().top
+					}, 500, function(){document.location.hash = href;
+					document.location.hash = href;});
+				return false;
+			});
+			
+			
+			$('body').scrollspy({ target: '#navigationBar' });
+			$(document).on('activate.bs.scrollspy', function(e) {
+				var $hash, $node;
+				$hash = $("a[href^='#']", e.target).attr("href").replace(/^#/, '');
+				$node = $('#' + $hash);
+				if ($node.length) {
+				$node.attr('id', '');
+				}
+				document.location.hash = $hash;
+				document.location.hash = $hash;
+				if ($node.length) {
+					return $node.attr('id', $hash);
+				}
+			});						
+		}
+	}, 5000);	
 	//setStellar();
 	loadEducation();
 	loadSchAchievements();
 	loadCoursework();
 	loadCertifications();
+	loadSkills();
 	loadWorkExp();
 	loadProjects();
 	loadPORS();
 	loadExtraActivities();
 	loadExtraAchievements();
 });
+
+
+
 
 function setStellar(){
 	$.stellar({
@@ -63,12 +83,16 @@ function setStellar(){
 	});
 }
 
+var timer;
+var hash;
+var count=10;
 var spreadsheetID = "1PnaPhFPceQnbcz3FPQk8pEyxMwgeXagZyEx2j_n1GLg";
 var workExp = [];
 var education = [];
 var schAchievements =[];
 var coursework = [];
 var certifications = [];
+var skills =[];
 var projects = [];
 var pors = [];
 var activities = [];
@@ -98,6 +122,8 @@ function loadPORS(){
 		$('.tile-header').matchHeight();
 		$('.tile-footer').matchHeight();
 		$('.tile').matchHeight();
+		$('.updateStatus').append('<p>Loaded: Positions of Responsibilities</p>');
+		count--;
 	});	
 }
 
@@ -125,6 +151,13 @@ function loadProjects(){
 		$('.tile-header').matchHeight();
 		$('.tile-footer').matchHeight();
 		$('.tile').matchHeight();
+		
+		$('.slideTextUp').click(function(){
+			$('.slideTextUp').removeClass('moveUp');
+			$(this).toggleClass('moveUp');
+		});
+		$('.updateStatus').append('<p>Loaded: Projects</p>');
+		count--;
 	});	
 }
 
@@ -143,6 +176,8 @@ function loadWorkExp(){
 		});
 		
 		ko.applyBindings(workExp, document.getElementById("workExperience"));
+		count--;
+		$('.updateStatus').append('<p>Loaded: Loaded Work Experience</p>');
 	});
 }
 
@@ -161,6 +196,8 @@ function loadEducation(){
 		});
 		
 		ko.applyBindings(education, document.getElementById("education"));
+		$('.updateStatus').append('<p>Loaded: Education Details</p>');
+		count--;
 	});
 }
 
@@ -181,6 +218,8 @@ function loadSchAchievements(){
 		
 		ko.applyBindings(schAchievements, document.getElementById("schAchievements"));
 		$('.info').matchHeight();
+		$('.updateStatus').append('<p>Loaded: Scholastic Achievements</p>');
+		count--;
 	});
 }
 
@@ -203,6 +242,8 @@ function loadCoursework(){
 		
 		ko.applyBindings(coursework, document.getElementById("coursework"));
 		$('.info').matchHeight();
+		$('.updateStatus').append('<p>Loaded: Courework</p>');
+		count--;
 	});
 	
 }
@@ -224,6 +265,8 @@ function loadCertifications(){
 		
 		ko.applyBindings(certifications, document.getElementById("certifications"));
 		$('.info').matchHeight();
+		$('.updateStatus').append('<p>Loaded: Certifications</p>');
+		count--;
 	});
 	
 }
@@ -244,6 +287,8 @@ function loadExtraActivities(){
 		});
 		
 		ko.applyBindings(activities, document.getElementById("activities"));
+		$('.updateStatus').append('<p>Loaded: Extracurricular Activities</p>');
+		count--;
 	});
 	
 }
@@ -263,6 +308,34 @@ function loadExtraAchievements(){
 		});
 		
 		ko.applyBindings(achievements, document.getElementById("achievements"));
+		$('.updateStatus').append('<p>Loaded: Extracurricular Achievements</p>');
+		count--;
+	});
+	
+}
+
+function loadSkills(){
+	
+	// Make sure it is public or set to Anyone with link can view
+	var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/10/public/values?alt=json";
+	var jqxhr = $.getJSON(url);
+	
+	// Set another completion function for the request above
+	jqxhr.done(function() {
+		entries = jqxhr.responseJSON.feed.entry;
+		
+		$(entries).each(function(){
+			var skill ={};
+			skill.skill=this.gsx$skill.$t;
+			skill.level=this.gsx$level.$t;
+			skill.details = this.gsx$details.$t;
+			skills.push(skill);
+		});
+		
+		ko.applyBindings(skills, document.getElementById("skills"));
+		initializeCarousel();
+		$('.updateStatus').append('<p>Loaded: Skills</p>');
+		count--;
 	});
 	
 }
@@ -282,4 +355,64 @@ function Education(data) {
 	this.stream = data.gsx$stream.$t;
 	this.institution = data.gsx$institution.$t;
 	this.score = data.gsx$score.$t;
+}
+
+function initializeCarousel(){
+	var jcarousel = $('.jcarousel');
+	
+	var perPageItem;
+
+        jcarousel
+            .on('jcarousel:reload jcarousel:create', function ()
+					{
+						var carousel = $(this),
+							width = carousel.innerWidth();
+							perPageItem = 1;
+							
+						if (width>=1000){
+							perPageItem = 6;
+						} else if (width >= 600) {
+							perPageItem = 3;
+						} else if (width >= 350) {
+							perPageItem = 2;
+						}
+						
+						width = Math.floor(width / perPageItem);;
+						
+						carousel.jcarousel('items').css('width',width + 'px');
+					})
+            .jcarousel({
+                wrap: 'circular'
+            });
+
+        $('.jcarousel-control-prev')
+            .jcarouselControl({
+                target: '-=1'
+            });
+
+        $('.jcarousel-control-next')
+            .jcarouselControl({
+                target: '+=1'
+            });
+
+        $('.jcarousel-pagination')
+            .on('jcarouselpagination:active', 'a', function() {
+                $(this).addClass('active');
+            })
+            .on('jcarouselpagination:inactive', 'a', function() {
+                $(this).removeClass('active');
+            })
+            .on('click', function(e) {
+                e.preventDefault();
+            })
+            .jcarouselPagination({
+                perPage: 1,
+                item: function(page) {
+                    return '<a href="#' + page + '">' + page + '</a>';
+                }
+            });
+	$('.jcarousel').jcarouselAutoscroll({
+	target: '+='+Math.max(Math.ceil(perPageItem/2),1),
+    interval: 3000
+});
 }

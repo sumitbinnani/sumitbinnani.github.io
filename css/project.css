@@ -51,9 +51,21 @@
 	padding: 0 1em;
 }
 
+/*
 .slideTextUp:hover > div {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%)
+}*/
+
+.moveUp > div{
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%)
 }
+
+
+
+

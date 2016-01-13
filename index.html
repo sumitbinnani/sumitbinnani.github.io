@@ -5,13 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
-        <title>Sumit Binnani</title>
+        <meta name="title" content="Sumit Binnani">
+		<meta itemprop="name" content="Sumit Binnani">
+		<meta property="og:title" content="Sumit Binnani">
+		<meta name="description" content="Personal Website of Sumit Binnani. Contains brief information about academics, experiences, projects and extracurricular activitites of Sumit Binnani.">
+		<meta itemprop="description" content="Personal Website of Sumit Binnani. Contains brief information about academics, experiences, projects and extracurricular activitites of Sumit Binnani.">
+		<meta id="meta-tag-description" property="og:description" content="Personal Website of Sumit Binnani. Contains brief information about academics, experiences, projects and extracurricular activitites of Sumit Binnani.">
+		<title>Sumit Binnani</title>
+		<meta itemprop="image" content="https://sites.google.com/site/sumitbinnani/_/rsrc/1444665270843/home/261461_1830874825496_487515_n.jpg">
+		<meta property="og:image" content="https://sites.google.com/site/sumitbinnani/_/rsrc/1444665270843/home/261461_1830874825496_487515_n.jpg">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link href="css/stylesheet.css" rel="stylesheet">
 		<link href="css/profile.css" rel="stylesheet">
 		<link href="css/academic.css" rel="stylesheet">
+		<link href="css/skills.css" rel="stylesheet">
 		<link href="css/timeline.css" rel="stylesheet">
 		<link href="css/project.css" rel="stylesheet">
 		<script type="application/ld+json">
@@ -21,11 +30,13 @@
 				"name": "Sumit Binnani",
 				"jobTitle": "Application Developer",
 				"url": "https://sumitbinnani.github.io",
+				"image": "https://scontent.fmaa1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/10409432_10201647346819338_741682520973205992_n.jpg?oh=4c6d16eb67e229054bf0219f183f40df&oe=571EC427",
 				"sameAs" : [
 					"https://www.facebook.com/sumit.binnani",
 					"https://www.linkedin.com/in/sumitbinnani",
 					"https://plus.google.com/+SumitBinnani",
-					"https://github.com/sumitbinnani/"
+					"https://github.com/sumitbinnani/",
+					"https://sites.google.com/site/sumitbinnani/"
 				],
 				"address": {
 					"@type": "PostalAddress",
@@ -47,7 +58,23 @@
         <![endif]-->
     </head>
     <body>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+	
+		<div id="loader" style="width:100%; height:100%; position: fixed; background-color:rgba(164, 86, 20, 0.65); z-index:1000">
+			<div class='container'>
+			  <div class='loader'>
+				<div class='loader--dot'></div>
+				<div class='loader--dot'></div>
+				<div class='loader--dot'></div>
+				<div class='loader--dot'></div>
+				<div class='loader--dot'></div>
+				<div class='loader--dot'></div>
+				<div class='loader--text'></div>
+				<div class='updateStatus'></div>
+			  </div>
+			</div>
+		</div>
+	
+		<nav id="navigationBar" class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -56,13 +83,18 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Sumit Binnani</a>
+					<a class="navbar-brand" href="#landingPage" style="color:white">Sumit Binnani</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right"><!--
-						<li class="active"><a href="#">Link<span class="sr-only">(current)</span></a></li>
-						<li><a href="#">Link</a></li>-->
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#aboutMe">About Me</a></li>
+						<li><a href="#academics">Academics</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#workExperience">Work Experience</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#pors">Positions of Responsibilities</a></li>
+						<li><a href="#extraCurriculars">Extra Curriculars</a></li>
 					</ul>
 				</div>
 			</div>
@@ -70,10 +102,10 @@
 		
 		
 
-		<div class="fullPage" id="landingPage" data-stellar-background-ratio="0.5">
+		<div class="container-table" id="landingPage">
 			<div class="effect1"></div>
-			<div class="container-fluid container-table">
-				<div class="row vertical-center-row text-center">
+			<div class="container-fluid valign">
+				<div class="row text-center">
 					<div class="col-md-4" style="float:none; margin:auto;">
 
 						<div class="card hovercard jVCenter">
@@ -137,8 +169,8 @@
 			</div>
 		</div>
 		
-		<div id="academics" data-stellar-background-ratio="0.5">
-			<div class="effect1" style="background-color:rgba(50,50,50,0.5)"></div>
+		<div id="academics">
+			<div class="effect1" style="background-color:rgba(50,50,50,0.2)"></div>
 			<div style="position:relative; padding:50px">
 				<div class="container-fluid">
 					<div class="page-header">
@@ -164,37 +196,23 @@
 			</div>
 		</div>
 		
-		<div id="skills" style="padding:50px; background:rgba(51,51,51,0.8)">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="page-header"><h1>Skills</h1></div>
-						<div class="col-md-12">
-							<div class="progress">
-								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-									C, Python, Java, MATLAB
-								</div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-									Proteus, ModelSIM
-								</div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-									R, C++, VB, Android SDK
-								</div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-									Verilog, LABView
-								</div>
-							</div>
-						</div>
-				</div>
-				</div>
+		
+		<div id="skills">
+			<div class="page-header">
+						<h1>Skills</h1>
 			</div>
-		</div>
+			<div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul data-bind="template: {name: 'skill-template', foreach: skills}"></ul>
+                </div>
 
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                <p class="jcarousel-pagination"></p>
+            </div>
+		</div>
+		
 		<div id="workExperience">
 			<div style="padding:50px">
 				<div class="container" style="background-color:rgba(255, 255, 255, 0.5)">
@@ -206,10 +224,11 @@
 			</div>
 		</div>
 		
-		<div id="projects" data-stellar-background-ratio="0.5">
+		<div id="projects" >
+			<div class="effect1" style="background-color:rgba(50,50,50,0.05)"></div>
 			<div style="position:relative; padding:50px">
 				<div class="container-fluid">
-					<div class="page-header">
+					<div class="page-header" style="border-bottom: 1px solid #8E8E8E;">
 						<h1> Projects </h1>
 					</div>
 					<div class="row row-eq-height" data-bind="template: { name: 'project-template', foreach: projects }"></div>	
@@ -217,7 +236,7 @@
 			</div>
 		</div>
 		
-		<div id="pors" data-stellar-background-ratio="0.5">
+		<div id="pors">
 			<div class="effect1" style="background-color:rgba(50,50,50,0.5)"></div>
 			<div style="position:relative; padding:50px">
 				<div class="container-fluid">
@@ -312,7 +331,7 @@
 		</script>
 		
 		<script id="project-template"  type="text/html">
-            <div class="col-md-4">
+            <div class="col-md-4" style="padding:10px 20px;">
 				<div class="tile slideTextUp">
 					<div>
 						<div class="tile-header">
@@ -328,6 +347,20 @@
 					</div>
 				</div>
 			</div>
+        </script>
+		
+		<script id="skill-template"  type="text/html">
+            <li>
+				<div class="pie-wrapper" >
+					<span class="label" data-bind="text: $data.skill"></span>
+						<div class="pie" data-bind="style: {clip: $data.level<=50? '':'rect(auto, auto, auto, auto)'}">
+							<div class="right-side half-circle" data-bind="style: {transform: 'rotate('+180+'deg)'}"></div>
+							<div class="left-side half-circle" data-bind="style: {transform: 'rotate('+360*$data.level/100+'deg)'}"></div>
+						</div>
+					<div class="shadow"></div>
+				</div> 
+				<p class="details" data-bind="text: $data.details"></p>
+			</li>
         </script>
 		
 		<!--#9C6B23-->
@@ -346,9 +379,10 @@
         </script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<script src="js/jquery.stellar.min.js"></script>
 		<script src="js/jquery.matchHeight-min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+		<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
 		<script src="js/script.js"></script>
+		 
     </body>
 </html>
