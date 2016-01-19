@@ -153,7 +153,7 @@ function loadProjects(){
 		$('.tile').matchHeight();
 		
 		$('.slideTextUp').click(function(){
-			$('.slideTextUp').removeClass('moveUp');
+			$('.slideTextUp').not(this).removeClass('moveUp');
 			$(this).toggleClass('moveUp');
 		});
 		$('.updateStatus').append('<p>Loaded: Projects</p>');
@@ -412,7 +412,6 @@ function initializeCarousel(){
                 }
             });
 	$('.jcarousel').jcarouselAutoscroll({
-	target: '+='+Math.max(Math.ceil(perPageItem/2),1),
-    interval: 3000
+	target: '+=1'//+Math.max(Math.ceil(perPageItem/2),1)
 });
 }

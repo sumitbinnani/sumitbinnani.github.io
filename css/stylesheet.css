@@ -301,9 +301,8 @@ body{
 	text-align:center;
 }
 
-#projects [class^='col']{
+#projects .slideTextUp{
 	cursor: pointer;
-	padding:5px;
 }
 
 #projects h1{
