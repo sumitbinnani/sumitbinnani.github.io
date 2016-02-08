@@ -198,6 +198,10 @@
 			canvasX = $('#canvas').position()['left'];
 			canvasY = $('#canvas').position()['top'];
 			function mousemove() {
+				p = d3.mouse(this);
+				tx = p[0];
+				ty = p[1];
+				
 				if(!loaded){
 					tooltipSpan.style.display = "block";
 					tooltipSpan.innerHTML = "Loading...";
@@ -205,9 +209,7 @@
 					tooltipSpan.style.left = (canvasX + tx + 20) + 'px';
 					return;
 				}
-				p = d3.mouse(this);
-				tx = p[0];
-				ty = p[1];
+				
 				p[0]=x.invert(p[0]);
 				p[1]=y.invert(p[1]);
 				
