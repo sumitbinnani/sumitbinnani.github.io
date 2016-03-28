@@ -42,7 +42,7 @@ Marker File: <input id='inputMarkers' type='file'>
 	var myIcon = L.icon({
 			iconUrl: "my_icon.png",
 			iconSize: [38, 38],
-			iconAnchor: [38, 19]
+			iconAnchor: [19, 38]
 	});
 	var markersLayer= L.layerGroup([]);
 
@@ -127,7 +127,7 @@ Marker File: <input id='inputMarkers' type='file'>
 			//adding marker, removing tiles
 			map.removeLayer(tiles);
 			map.addLayer(markersLayer);
-			document.getElementById('loading').innerHTML='Preparing Markers...';
+			document.getElementById('loading').innerHTML='Base Map and HeatMap Added. Preparing Markers...';
 			leafletImage(map, function(err, canvas){
 				//drawing markers
 				dataURL=canvas.toDataURL('image/png');
@@ -141,6 +141,9 @@ Marker File: <input id='inputMarkers' type='file'>
 				a.download = 'heatmap.png';
 				a.href = mergedImage.src;
 				a.click();
+				
+				//addingTileLayers
+				map.addLayer(tiles);
 			});
 			
 		});
