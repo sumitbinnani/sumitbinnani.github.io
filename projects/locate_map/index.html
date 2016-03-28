@@ -92,8 +92,8 @@ Marker File: <input id='inputMarkers' type='file'>
 		config.complete =  function(results, file) {
 							markerPoints = results.data.map(function (p) { return [p['Y'], p['X'], p['Name']]; });
 							markerPoints.forEach(function(p){
-								//L.marker([p[0], p[1]], {icon: myIcon, title: p[2]}).addTo(map);
-								L.marker([p[0], p[1]], {title: p[2]}).addTo(map);
+								L.marker([p[0], p[1]], {icon: myIcon, title: p[2]}).addTo(map);
+							//	L.marker([p[0], p[1]], {title: p[2]}).addTo(map);
 							});
 							document.getElementById('loadingMarkers').innerHTML = 'Loading Complete.';
 							dom.disabled = false;
