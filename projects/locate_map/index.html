@@ -100,10 +100,10 @@ Marker File: <input id='inputMarkers' type='file'>
 	function capture(dom){
 		dom.disabled = true;
 		document.getElementById('loading').hidden = false;
-		var canvas = document.createElement('canvas');
-		canvas.height = map.getSize()['x'];
-		canvas.height = map.getSize()['y'];
-		var context = canvas.getContext("2d");
+		var finalCanvas = document.createElement('canvas');
+		finalCanvas.width = map.getSize()['x'];
+		finalCanvas.height = map.getSize()['y'];
+		var context = finalCanvas.getContext("2d");
 		
 		var baseImage = new Image();
 		var markerImage = new Image();
@@ -114,10 +114,12 @@ Marker File: <input id='inputMarkers' type='file'>
 		map.removeLayer(markersLayer);
 		document.getElementById('loading').innerHTML='Preparing Base Map...';
 		leafletImage(map, function(err, canvas) {
+			//drawing base map
 			dataURL=canvas.toDataURL('image/png');
 			baseImage.src = dataURL;
 			context.drawImage(baseImage, 0, 0);
 			
+			//drawing heat map
 			heatLayer = document.getElementsByTagName('canvas')[0];
 			heatMap.src = heatLayer.toDataURL('image/png');
 			context.drawImage(heatMap, 0, 0);
@@ -127,11 +129,12 @@ Marker File: <input id='inputMarkers' type='file'>
 			map.addLayer(markersLayer);
 			document.getElementById('loading').innerHTML='Preparing Markers...';
 			leafletImage(map, function(err, canvas){
+				//drawing markers
 				dataURL=canvas.toDataURL('image/png');
 				markerImage.src = dataURL;
 				context.drawImage(markerImage, 0, 0);
 				
-				mergedImage.src = canvas.toDataURL('image/png');
+				mergedImage.src = finalCanvas.toDataURL('image/png');
 				document.getElementById('loading').hidden = true;
 				dom.disabled = false;
 				var a = document.createElement('a');
