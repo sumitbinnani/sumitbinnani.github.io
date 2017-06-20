@@ -50,21 +50,23 @@ function loadProjects() {
 function search(event) {
     var regex = new RegExp(event.target.value.toLowerCase());
     var projectHolders = $('.projectHolder');
+    var total_count=0;
+    var selected_count=0;
     projectHolders.map(function (index, el) {
         if (!regex.test(el.innerText.toLowerCase())){
             $(el).hide();
             if (!filterResetRevealed){
                 $('.tap-target').tapTarget('open');
                 filterResetRevealed=true;
-                /*
-                setTimeout(function () {
-                    $('.tap-target').tapTarget('close');
-                }, 3000);*/
             }
         } else {
             $(el).show();
+            selected_count++;
         }
+        total_count++;
     });
+    $("#total_count")[0].innerText = total_count;
+    $("#filter_count")[0].innerText = selected_count;
 }
 
 function getParameterByName(name, url) {

@@ -293,17 +293,10 @@ body{
 }
 
 #projects{
-	position:relative;
-	background-image:url('../img/research.jpg');
-	background-size: cover !important;
-	background-attachment: fixed !important;
-	width:100%;
 	text-align:center;
+	padding-bottom: 20px;
 }
 
-#projects .slideTextUp{
-	cursor: pointer;
-}
 
 #projects h1{
 	color:black;

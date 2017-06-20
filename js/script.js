@@ -38,7 +38,6 @@ $(document).ready(function() {
 	loadCertifications();
 	loadSkills();
 	loadWorkExp();
-	loadProjects();
 	loadPORS();
 	loadExtraActivities();
 	loadExtraAchievements();
@@ -85,7 +84,7 @@ function setStellar(){
 
 var timer;
 var hash;
-var count=10;
+var count=9;
 var spreadsheetID = "1PnaPhFPceQnbcz3FPQk8pEyxMwgeXagZyEx2j_n1GLg";
 var workExp = [];
 var education = [];
@@ -126,41 +125,6 @@ function loadPORS(){
 		count--;
 	});	
 }
-
-function loadProjects(){
-	// Make sure it is public or set to Anyone with link can view
-	var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/6/public/values?alt=json";
-	
-	var jqxhr = $.getJSON(url);
-	
-	// Set another completion function for the request above
-	jqxhr.done(function() {
-		entries = jqxhr.responseJSON.feed.entry;
-		
-		$(entries).each(function(){
-			var project ={};
-			project.title = this.gsx$title.$t;
-			project.subTitle = this.gsx$subtitle.$t;
-			project.description = this.gsx$description.$t;
-			project.tags = (this.gsx$tags.$t).split(',').map(Function.prototype.call, String.prototype.trim);
-			projects.push(project);
-		});
-		
-		ko.applyBindings(projects, document.getElementById("projects"));
-		
-		$('.tile-header').matchHeight();
-		$('.tile-footer').matchHeight();
-		$('.tile').matchHeight();
-		
-		$('.slideTextUp').click(function(){
-			$('.slideTextUp').not(this).removeClass('moveUp');
-			$(this).toggleClass('moveUp');
-		});
-		$('.updateStatus').append('<p>Loaded: Projects</p>');
-		count--;
-	});	
-}
-
 function loadWorkExp(){	
 	// Make sure it is public or set to Anyone with link can view
 	var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/values?alt=json";
