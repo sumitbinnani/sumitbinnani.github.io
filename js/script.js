@@ -36,7 +36,7 @@ $(document).ready(function() {
 	loadSchAchievements();
 	loadCoursework();
 	loadCertifications();
-	loadSkills();
+	//loadSkills();
 	loadWorkExp();
 	loadPORS();
 	loadExtraActivities();
@@ -84,7 +84,7 @@ function setStellar(){
 
 var timer;
 var hash;
-var count=9;
+var count=8;
 var spreadsheetID = "1PnaPhFPceQnbcz3FPQk8pEyxMwgeXagZyEx2j_n1GLg";
 var workExp = [];
 var education = [];
