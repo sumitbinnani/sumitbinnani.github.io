@@ -1,0 +1,1 @@
+Binnani, Sumit, and Hari Om Bansal. "Electronic aid for elder and sick people IR-remote controlled switch board for changing state of electrical appliances." Recent Advances and Innovations in Engineering (ICRAIE), 2014. IEEE, 2014. [pdf](./Electronic_Aid_for_Elder_and_Sick_People.pdf)
