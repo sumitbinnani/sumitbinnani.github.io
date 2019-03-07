@@ -1,0 +1,67 @@
+---
+layout: default
+type: header
+include_footer: true
+title: Projects
+scripts: js/project.js
+---
+<div class="cv container-fluid">
+    <div class="cv-container container myshadow bg-white rounded">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+            </div>
+            <input id="search-bar" class="form-control" placeholder="Filter Projects using Keywords, Projects, etc." type="search">
+        </div>
+        <div class="row">
+            {% for item in site.data.resume.projects %}
+            <div class="col-12 col-md-4 project-col" style="padding-bottom: 15px">
+                <div class="card project-card" style="height: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.title}}</h5>
+                        <div class="card-matter">
+                            <p class="card-text text-truncate">{{item.highlights}}</p>
+                            <p class="card-text text-muted text-truncate"><strong>Keywords:</strong> {{item.tags}}</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-info btn-modal" type="button">
+                            Details
+                        </button>
+                        <span class="extra-btn">
+                    {% for link in item.link %}
+                    <button class="btn btn-info btn-extra" type="button">
+                        <a href="{{item.link}}" target="_blank">Link</a>
+                    </button>
+                    {% endfor %}
+                    </span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body details">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="extra-btn">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

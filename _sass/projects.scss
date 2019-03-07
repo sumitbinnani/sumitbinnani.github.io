@@ -1,0 +1,33 @@
+.myshadow{
+  @extend .shadow;
+  @include media-breakpoint-down(sm){
+    box-shadow: unset !important;
+  }
+}
+
+.project-card{
+  @extend .rounded;
+  @extend .myshadow;
+
+  margin-bottom: 15px !important;
+  @include media-breakpoint-up(sm) {
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+  }
+}
+
+.project-card p.card-text {
+  margin-bottom: 0px;
+}
+
+.project-deck{
+  @include media-breakpoint-up(sm){
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+
+.btn-extra a{
+  text-decoration: none;
+  color: white;
+}
