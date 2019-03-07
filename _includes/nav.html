@@ -1,0 +1,45 @@
+<nav id="navbar-main" class="navbar navbar-expand-lg navbar-light mynavbar fixed-top">
+    <a class="navbar-brand" href="{{site.url}}{{site.baseurl}}#">Sumit Binnani</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="nav nav-pills navbar-nav">
+            {% for link in site.data.links %}
+            {% assign url = link.url | prepend: "/" %}
+
+            {% if link.hash %}
+            {% assign hash = link.hash | prepend: "#" %}
+            {% else %}
+            {% assign hash = "" %}
+            {% endif %}
+
+
+            {% if url == page.url %}
+            {% assign href = hash %}
+            {% else %}
+            {% assign href = hash | prepend: url | prepend : site.baseurl %}
+            {% endif %}
+
+
+            {% if url == page.url and hash=="" %}
+            {% assign isactive = "active" %}
+            {% endif %}
+
+
+            <li class="nav-item">
+                <a class="nav-link {{isactive}}" href="{{href}}">{{link.name}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <!-- Search form -->
+        <!--
+        <form class="form-inline">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </form> -->
+    </div>
+
+
+    </div>
+</nav>
