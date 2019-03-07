@@ -1,0 +1,12 @@
+---
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+{% include header.html %}
+{{ content }}
+{% include footer.html include_footer=page.include_footer %}
+{% include scripts.html scripts=page.scripts %}
+</body>
+</html>

@@ -1,0 +1,11 @@
+---
+layout: null
+sitemap:
+exclude: 'yes'
+---
+
+/* TEAM */
+Developer & Designer: Sumit Binnani
+Twitter: @sumitbinnani
+Site: https://sumitbinnani.github.io
+Location: La Jolla, California

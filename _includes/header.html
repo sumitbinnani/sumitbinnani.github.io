@@ -1,0 +1,127 @@
+<nav id="navbar-main" class="navbar navbar-expand-lg navbar-light mynavbar fixed-top">
+    <a class="navbar-brand" href="{{site.url}}{{site.baseurl}}#">Sumit Binnani</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="nav nav-pills navbar-nav">
+            {% for link in site.data.links %}
+            {% assign url = link.url | prepend: "/" %}
+
+            {% if link.hash %}
+            {% assign hash = link.hash | prepend: "#" %}
+            {% else %}
+            {% assign hash = "" %}
+            {% endif %}
+
+
+            {% if url == page.url %}
+            {% assign href = hash %}
+            {% else %}
+            {% assign href = hash | prepend: url | prepend : site.baseurl %}
+            {% endif %}
+
+
+            {% if url == page.url and hash=="" %}
+            {% assign isactive = "active" %}
+            {% endif %}
+
+
+            <li class="nav-item">
+                <a class="nav-link {{isactive}}" href="{{href}}">{{link.name}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <!-- Search form -->
+        <!--
+        <form class="form-inline">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </form> -->
+    </div>
+
+
+    </div>
+</nav>
+
+
+<div id="header">
+    <div class="{{ page.type }}">
+        <div style="margin: auto; z-index:100">
+            <div class='d-flex {%if page.type=="cover" %}flex-column{% endif %}'>
+                <div class="d-flex "><img class='{%if page.type=="header" %}d-none d-md-block{% endif %} user-image'
+                                          src="images/profile.jpg"/>
+                </div>
+                <div class="d-flex flex-column">
+                    <div class="d-flex">
+                        <h1>{{site.title}}</h1>
+                    </div>
+                    <div class="divider-top"></div>
+                    {% if page.type=="cover" %}
+                    <code class="d-print-none">I am&nbsp;<span class="typewrite wrap"
+                                                               data-period="2000"
+                                                               data-type='{{site.author.tags | join: '","' | prepend: '["' | append: '"]'}}'></span></code>
+                    <div class="divider-bottom"></div>
+                    {% endif %}
+                    <div class="d-flex justify-content-center d-print-none">
+                        <ul class="navigation">
+                            {% if site.author.twitter_username %}
+                            <!-- Twitter -->
+                            <li>
+                                <a href="http://twitter.com/{{ site.author.twitter_username }}" data-toggle="tooltip"
+                                   title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                    <span class="label">Twitter</span>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if site.author.facebook_username %}
+                            <!-- Facebook -->
+                            <li>
+                                <a href="http://fb.me/{{ site.author.facebook_username }}"
+                                   title="{{ site.author.facebook_username }} on Facebook" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                    <span class="label">Facebook</span>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if site.author.linkedin_username %}
+                            <!-- LinkedIn -->
+                            <li>
+                                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}"
+                                   title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span class="label">LinkedIn</span>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if site.author.github_username %}
+                            <!-- GitHub -->
+                            <li>
+                                <a href="https://www.github.com/{{ site.author.github_username }}"
+                                   title="{{ site.author.github_username }} on GitHub" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    <span class="label">GitHub</span>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if site.author.email %}
+                            <!-- Email -->
+                            <li>
+                                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}"
+                                   target="_blank">
+                                    <i class="fas fa-envelope"></i>
+                                    <span class="label">Email</span>
+                                </a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                    {% if page.type=="header" %}
+                    <div class="divider-bottom"></div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

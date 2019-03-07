@@ -1,0 +1,14 @@
+---
+---
+$enable-gradients:true;
+@import "bootstrap/bootstrap";
+@import "header";
+@import "nav";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header{
+  background-image: url({{site.baseurl}}/images/cover.jpg);
+}
