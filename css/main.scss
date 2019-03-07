@@ -23,7 +23,6 @@ html {
   padding-top: 10px;
 }
 
-
 .section h2[id].title {
   margin-top: -80px;
   padding-top: 80px;
@@ -36,4 +35,32 @@ html {
   @include media-breakpoint-down(sm) {
     text-align: unset;
   }
+}
+
+.container-404{
+
+}
+
+.container-404 .group1{
+  text-align: right;
+  max-height: 40vh;
+  overflow: hidden;
+  @include media-breakpoint-down(sm){
+    text-align: center;
+  }
+}
+
+.container-404 .group1 img{
+  max-height: 40vh;
+}
+
+.container-404 .group2{
+  text-align: left;
+  @include media-breakpoint-down(sm){
+    text-align: center;
+  }
+}
+
+.container-404 .group2 a:hover{
+  text-color: white;
 }
