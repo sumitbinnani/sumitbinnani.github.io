@@ -1,6 +1,6 @@
 - type: Techniques
   entries: Deep Learning, Machine Learning, Data Science, Computer Vision, NLP
 - type: Languages
-  entries: Python, C/C++, Java, Matlab, HTML, CSS, Javascript} % Skills
+  entries: Python, C/C++, Java, Matlab, HTML, CSS, Javascript
 - type: Tools/Packages
   entries: ROS, tensorflow, keras, pytorch, scikit-learn, openCV, pyspark, hadoop, hive, pandas, numpy, Android SDK
