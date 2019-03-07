@@ -1,0 +1,41 @@
+# Site settings
+title: Sumit Binnani
+description: Personal Website of Sumit Binnani. Contains brief information about academics, experiences, projects and extracurricular activitites of Sumit Binnani.
+url: 'https://sumitbinnani.github.io'
+baseurl: ''
+
+author:
+  name: 'Sumit Binnani'
+  email: sumit.binnani@gmail.com
+  twitter_username: sumitbinnani
+  facebook_username: sumitbinnani
+  github_username:  sumitbinnani
+  linkedin_username:  sumitbinnani
+  phone: "(657) 200-1557"
+  website: https://sumitbinnani.github.io/
+  address: San Diego, CA
+  tags:
+    - an AI Enthusiast.
+    - a Passionate Developer.
+    - a Technical Geek.
+    - a Music Lover.
+
+
+# Build settings
+destination: _site
+
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', '.idea']
