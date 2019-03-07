@@ -1,0 +1,20 @@
+- title: (Accepted) Transfer of Expertise in Deep Neural Networks
+  subtitle: VSS, Tampa FL, May 2019
+  highlights:
+    - The attention map used by the expert network has higher entropy, and smaller, local features than the novice networks (suggesting that the expert looks at multiple locations to make a classification decision). We define experts as systems that categorize stimuli at a subordinate level, and novices as systems that categorize the same stimuli at a coarser grain
+    - The attention map used by the expert can be used to train the novice, resulting in faster training and better performance. We consider this to be analogous to the expert telling the novice where to look for discriminative regions of the image
+
+- title: Applications of Deep Learning to Autonomous Vehicles
+  subtitle: International Conference on Business Analytics and Intelligence, IIM
+    Bangalore, Dec. 2017
+  highlights:
+    - Explore some of the feature selection and preprocessing techniques to make models robust and to reduce the size of the data
+    - Present a Deep Learning based approach to perform various tasks like traffic sign classification, object detection, semantic segmentation and lane detection
+    - We look at the techniques in Deep Learning that are currently being used in the industry for the successful navigation of autonomous vehicles
+
+- title: Electronics Aid for Elder and Sick
+  subtitle: Recent Advances and Innovations in Engineering, IEEE, Poornima University,
+    Jaipur, May 2014
+  highlights:
+    - Proposed  a wireless switch board for easy-accessibility in an hospital-like environment for controlling various electrical appliances like light, fan, etc. without interference with similar wireless switches in adjoining room
+    - The data signal is communicated to receiver wirelessly by IR Remote Controller. The receiver consists of IR Receiver, TSOP1838, to read data signal operating at 38 kHz and a microcontroller to process data and communicate trigger signal to change the state of switch

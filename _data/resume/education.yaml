@@ -1,0 +1,21 @@
+- institution: University of California San Diego
+  location: La Jolla, CA
+  position: M.S. in Computer Science
+  endDate: Jun 2019
+  highlights:
+    - 'GPA: 3.96/4.00'
+    - 'Specialization: Artificial Intelligence'
+
+- institution: Birla Institute of Technology and Science (BITS Pilani)
+  location: Pilani, India
+  position: B.Engg. (honors) in Electrical and Electronics Engineering
+  endDate: Jun 2015
+  highlights:
+    - 'GPA: 9.23/10.00'
+    - Graduated with distinction and among top 5%
+
+- position: Online Courses
+  highlights:
+    - Self Driving Car Nanodegree, Udacity
+    - Artificial Intelligence Nanodegree, Udacity
+    - Data Science at Scale Specialization, University of Washington, Coursera

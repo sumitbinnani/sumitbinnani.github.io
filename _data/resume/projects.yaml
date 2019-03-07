@@ -1,0 +1,307 @@
+- id: Detect_and_Track
+  title: Detect and Track
+  subtitle: Under the supervision of Prof. Henrik Christensen
+  tags: Deep Learning, Kalman Filter, Detection, Tracking, PyTorch, Tensorflow, Python, Autonomous Driving
+  highlights: Created module for detection and tracking. Detection can be done using SSD Network or YoloV3 and tracking has been implemented using Kalman Filter.
+  link: https://github.com/sumitbinnani/Detect-and-Track
+
+- id: Transfer_Learning_from_Expert_to_Novice
+  title: Transfer Learning from Expert to Novice
+  subtitle: Under the supervision of Prof. Gary Cottrell
+  tags: Deep Learning, Transfer Learning, Attention Modelling, Cognitive Science
+  highlights: Gained over 50% in training time by using using attention map obtained from a CNN based expert bird classifier (trained using PyTorch) train a CNN based novice classifier. Currently working for a two headed architecture to perform simultaneous attention mapping and training.
+  link:
+
+- id: Imitation_Learning_for_Behavior_Planning
+  title: Imitation Learning for Behavior Planning
+  subtitle: Under the supervision of Prof. Henrik Christensen
+  tags: Deep Learning, Computer Vision, Semantic Segmentaion, Reinforcement Learning, Tensorflow, Keras, Python, Autonomous Driving
+  highlights: Currently, working towards data collection to train reinforcement learning and imitation learning model to clone human driving behavior for for prediction of steering angle and throttle. We plan to deploy a hybrid system that switches between imitation learning based model to rule based model to smooth behavior.
+  link:
+
+- id: Reinforcement_Learning_for_OpenAI_Gym_Games
+  title: Reinforcement Learning for OpenAI Gym Games
+  subtitle: Self-Motivated Project
+  tags: Deep Reinforcement Learning, Pytorch, Keras, Python
+  highlights: Implemented Actor-Critic and DDPG algorithms on continuous (Cheetah and Walker) and discreet control tasks (Lunar Lander Atari Game) in OpenAI Gym Environment. Also, experiemnted with REINFORCE and DQN models for the same tasks.
+  link:
+
+- id: Visual_Based_Perception_System_for_Autonomous_Driving
+  title: Visual Based Perception System for Autonomous Driving
+  subtitle: Under the supervision of Prof. Henrik Christensen
+  tags: Deep Learning, Computer Vision, Transfer Learning, Tensorflow, Keras, Python, Autonomous Driving
+  highlights: The task includes development and testing vision based perception system to perform lane-detection, pedestrian detection, and traffic-sign detection and recognition using Deep Learning Techniques (TensorFlow and PyTorch). The system is finally to be deployed as a ROS node.
+  link:
+
+- id: Day_in_a_Life
+  title: Day in a Life
+  subtitle: Under the supervision of Prof. Gary Cottrell
+  tags: Deep Learning, Cognitive Science, Visual Processing
+  highlights: Individuals vary in how well they recognize, remember, and categorize faces and objects. This collaborative network aims at a broad understanding of such individual differences across a wide range of visual abilities and domains, to elucidate how both variation in general visual abilities and specific visual experiences affect our visual behavior. The project combines (1) ultra-high-field brain imaging to map functional and anatomical brain measures trajectories in visual learning, (2) modern psychometric methods to create the necessary measures of individual differences in high-level visual ability, and (3) deep convolutional neural network models of vision that will be informed by brain and behavioral measures. These state-of-the-art tools will be integrated to account for individual differences in brain and behavior and to predict visual learning and performance.
+  link:
+
+- id: Human_Activity_Recognition_using_Echo_State_Convolutional_Neural_Network
+  title: Human Activity Recognition using Echo State Convolutional Neural Network
+  subtitle: Under the supervision of Prof. Gary Cottrell
+  tags: Echo State Networks, Deep Learning, Human Activity Recognition
+  highlights: Recognize human activity using Echo State Convolutional Neural Network.
+  link: https://github.com/sumitbinnani/ConvESN
+
+- id: Integration_of_Autonomous_Vehicles_Modules
+  title: Integration of Autonomous Vehicles Modules
+  subtitle: (On-Going) Self-Driving Car Nanodegree, Udacity
+  tags: Path Planning, Way Point Detection, Traffic Light Detection, ROS, Artificial Intelligence, Autonomous Driving
+  highlights: Wrote ROS nodes to implement core functionality of the autonomous vehicle system, including traffic light detection, control, and waypoint following.
+  link: https://github.com/carma-ai/CarND-Capstone
+
+- id: Semantic_Segmentation_for_Autonomous_Driving
+  title: Semantic Segmentation for Autonomous Driving
+  subtitle: (On-Going) Self-Driving Car Nanodegree, Udacity
+  tags: Encoder-Decoder Model, Deep Learning, VGG-16. Semantic Segmentation
+  highlights: Constructed and designed a fully convolutional neural network based on the VGG-16 image classifier architecture for performing semantic segmentation to identify drivable road area from an car dashcam image (trained and tested on the KITTI data set)
+  link:
+
+- id: Path_Planning_for_Autonomous_Vehicle
+  title: Path Planning for Autonomous Vehicle
+  subtitle: (On-Going) Self-Driving Car Nanodegree, Udacity
+  tags: Path Planning, Artificial Intelligence, Autonomous Driving
+  highlights: The goal in this project is to create a path planner that is able to create smooth, safe paths for the car to follow. The highway track has other vehicles, all going different speeds, but approximately obeying the 50 MPH speed limit. The car will be transmitting its localization information, along with its sensor fusion data, which estimates the location of all the vehicles on the same side of the road. Use the map, which consists of waypoints along the middle of the highway, to figure out where the lanes are, and what the curvature of the road is.
+  link:
+
+- id: Google_Rating_and_Visit_Prediction
+  title: Google Rating and Visit Prediction
+  subtitle: "(Kaggle Competition: Top 5%) As part of the Course on Recommender Systems and Web Mining"
+  tags: Recommender Systems, Bayesian Personalized Ranking, Latent Factor Matrix Factorization, Item-based Collaborative Filtering, User-Based Collaborative Filtering
+  highlights: Wrote an Google Rating Predictor based on Latent Model Factorization and an Google Visit Prediction based on Bayesian Personalized Ranking Algorithm. The models were among the top-5% of over 600 submissions.
+  link:
+
+- id: Facial_Keypoint_Detection
+  title: Facial Keypoint Detection
+  subtitle: Artificial Intelligence Nanodegree, Udacity
+  tags: Computer Vision, Image Segmentation, Deep Learning, Tensorflow, OpenCV, Autonomous Driving
+  highlights: Build an end-to-end facial keypoint recognition system based on Deep Learning. Facial keypoints include points around the eyes, nose, and mouth on any face.
+  link: https://github.com/sumitbinnani/Facial-Keypoint-Detection
+
+- id: Deep_Learning_to_Clone_Human_Driving_Behavior
+  title: Deep Learning to Clone Human Driving Behavior
+  subtitle: Self-Driving Car Nanodegree, Udacity
+  tags: Deep Learning, Computer Vision, Transfer Learning, Tensorflow, Keras, Python, Autonomous Driving
+  highlights: Built and trained a convolutional neural network for end-to-end driving in a simulator, using TensorFlow and Keras. Used optimization techniques such as regularization and dropout to generalize the network for driving on multiple tracks.
+  link: https://github.com/sumitbinnani/CarND-Behavioral-Cloning-P3
+
+- id: Audience_Pooling_Framework
+  title: Audience Pooling Framework
+  subtitle: Media IQ Digital India Ltd.
+  tags: Map-Reduce, Hadoop Streaming, Data Structures, Design Pattern, Scalable Search Platform, Big Data, Haddop Streaming, Java
+  highlights: "The aim of the project was to develop query engine to filter data from daily feed satisfying any given combination of rules (geospatial: latlonradius, sitedomain, keywords, postal codes, etc.). Since the aim was fast retrieval of records satisfying predefined conditions, I implemented data structures, which despite higher insertion and deletion cost, were fast when it came to retrieval. Storing this data structure in memory of individual mappers, and using Hadoop streaming API, the platform is capable of handling complex queries. Also, the current code can be easily scaled to define new rules owing to the modular code which is built upon design patterns like <em>Factory Pattern</em>, <em>Command Pattern</em>, and <em>Chain of Responsibility</em>. For the ease of usage, I also added an UI on top of the platform for configuring rules. The platform now powers insights which previously were quite difficult to obtain."
+  link:
+
+- id: Model_Predictive_Control
+  title: Model Predictive Control
+  subtitle: Self-Driving Car Nanodegree, Udacity
+  tags: Artificial Intelligence, Control System, Model Predictive Control (MPC), Localization, Motion Tracking, C++, Autonomous Driving
+  highlights: Implemented Model Predictive Control to drive a vehicle around a track even with additional latency between commands.
+  link: https://github.com/sumitbinnani/Model-Predictive-Control
+
+- id: Particle_Filter_for_Localization_of_Autonomus_Vehicle
+  title: Particle Filter for Localization of Autonomus Vehicle
+  subtitle: Self-Driving Car Nanodegree, Udacity
+  tags: Artificial Intelligence, Particle Filter, Localization, Motion Tracking, C++, Autonomous Driving
+  highlights: Implemented a 2 dimensional particle filter in C++ capable of localizing a vehicle within desired accuracy and time.
+  link: https://github.com/sumitbinnani/Localization-Using-Particle-Filter
+
+- id: Kalman_Filter_for_Pedestrian_Motion_Tracking
+  title: Kalman Filter for Pedestrian Motion Tracking
+  subtitle: Self-Driving Car Nanodegree, Udacity
+  tags: Artificial Intelligence, Extended Kalman Filter, Unscented Kalman Filter, Motion Tracking, C++, Autonomous Driving
+  highlights: "Implemented a Extended as well as Unscented Kalman Filter algorithm in C++ capable of tracking a pedestrian''s motion in two dimensions"
+  link: https://github.com/sumitbinnani/Unscented-Kalman-Filter-Project
+
+- id: Sign_Language_Recognizer
+  title: Sign Language Recognizer
+  subtitle: Aritficial Intelligence Nanodegree, Udacity
+  tags: Artificial Intelligence, Hidden Markov Models (HMMs), Bayesian Information Creterion, Deviance Information Creterion, Sign Langauage, Python
+  highlights: Built a system that can recognize words communicated using the American Sign Language (ASL). Trained a set of Hidden Markov Models (HMMs) using part of a preprocessed dataset of tracked hand and nose positions extracted from video to try and identify individual words from test sequences. Experimented with model selection techniques including BIC, DIC, and K-fold Cross Validation.
+  link: https://github.com/sumitbinnani/Sign-Language-Recognizer
+
+- id: PID_Controller_for_Autonomous_Driving
+  title: PID Controller for Autonomous Driving
+  subtitle: Self-Driving Car Nanodegree, Udacity
+  tags: Control Systems, PID Controller, C++, Autonomous Driving
+  highlights: Implemented a PID controller in C++ to maneuver a vehicle around a track.
+  link: https://github.com/sumitbinnani/PID-Control-For-Autonomous-Driving
+
+- id: Deep_Learning_for_Parking_Slot_Occupancy
+  title: Deep Learning for Parking Slot Occupancy
+  subtitle: Stealth Startup
+  tags: Deep Learning, Computer Vision, Transfer Learning, Tensorflow, Keras, Python, Autonomous Driving
+  highlights: The aim of the project was to develop a vision based model for identification of empty parking slot. I used PKLot dataset (Almeida, P., Oliveira, L. S., Silva Jr, E., Britto Jr, A., Koerich, A., PKLot - A robust dataset for parking lot classification, Expert Systems with Applications, 42(11):4937-4949, 2015) for training the model. As preprocessing I resized all the images to 32x32 before proceeding with the training. The model was designed as multinomial classification and was built upon Google&rsquo;s Inception Model. By using Transfer Learning Technique, I achieved a classification accuracy of 96% on the balanced dataset. Further, randomly sampling images with a replacement for generation of training batches gave better results as compared to predefined batches, and boosted the accuracy to 98%.
+  link:
+
+- id: Vehicle_Detection
+  title: Vehicle Detection
+  subtitle: Self-Driving Car Nanodegree, Udacity
+  tags: Computer Vision, Image Processing, HOG, SVM, OpenCV, Python, scikit-learn, Autonomous Driving
+  highlights: Created a vehicle detection and tracking pipeline with OpenCV, histogram of oriented gradients (HOG), and support vector machines (SVM). Optimized and evaluated the model on video data from a automotive camera taken during highway driving.
+  link: https://github.com/sumitbinnani/CarND-Vehicle-Detection
+
+- id: Analyzing_Social_Network
+  title: Analyzing Social Network
+  subtitle: Self-Motivated Project
+  tags: Visualization, Mathematical Modelling, Social Network, Graphs, WebCrawler, Python, Selenium, PhantomJS, d3.j
+  highlights: The aim of the project was to visualize my social network, and find clusters on basis of connections. To accomplished the task, I wrote a python based web crawler using PhantomJS and Selenium to crawl friends&rsquo; list on Facebook (as Graph API restricts a number of results substantially). The data so obtained was then used to draw a graph by modeling people as charges and connection between them as spring. The modeling of charge and spring brought together the clusters which were closely connected and thus provided clusters without any other attributes. The clusters obtained once the people (charges) are similar despite their random initialization. Closely looking at the clusters, we find that there are clusters within clusters. Also, the people lying between two clusters are usually common to both of the clusters.
+  link: https://sumitbinnani.github.io/projects/analyzing-facebook-social-network.html
+
+- id: Predictive_Client_side_Profiling_for_Behavioral_Advertising
+  title: Predictive Client-side Profiling for Behavioral Advertising
+  subtitle: Media IQ Digital India Ltd.
+  tags: Real-time Prediction, Machine Learning, Client-side Profiling, Behavioral Targeting, Ad-exchange Architecture, JavaScript, HTML, Python, Kafka, NLP
+  highlights:  <strong>The methodology is currently under scrutiny for patent application</strong>. The idea was harnessed as part of a Hackathon at Media IQ Digital India Ltd. Leveraging know-how of Web Development and Data Science, I proposed a novel scalable approach for client-side user profiling to offer personalized advertising experience. The proposed methodology&rsquo;s merit includes near-real-time user profiling, high scalability, low-bandwidth requirement, privacy issues redressal, and minimal changes to existing ad-exchange architecture. The scalability and privacy issue are addressed by avoiding server-side data aggregation, which in turn also reduces server&rsquo;s storage and computational requirements. The approach can be easily integrated with existing ad-exchange platforms, and bid optimization frameworks, allowing advertisers highly-granular ad personalization without significant infrastructure investments
+  link:
+
+- id: Electronics_Aid_for_elder_and_Sick
+  title: Electronics Aid for elder and Sick
+  subtitle: Under Guidance of Dr. Hari Om Bansal, BITS Pilani
+  tags: Embedded System, Assistive Aid, Microcontroller Programming, Wireless Switches, IR Reciever, C, Arduino, Sensor Interfacing
+  highlights: The project started as a development of <em>Smart Home </em>module, and later got focused on the development of wireless switches as an aid for elderly and sick people. The choice of infra-red for wireless communication was to avoid interference with other medical devices in hospitals. The task was accomplished by using decoding IR Signal from TV-remote controller and triggering relays to operate electrical appliances. Since the frequency at which the IR Signals are emitted from the remote controller is high, the input from IR receiver was read using a lower level of abstractions. The control signals from the remote were easy to identify as the remote controller had a distinctive start and end sequence. The work done was published in<em> IEEE Conference Proceeding of Recent Advances and Innovations in Engineering (ICRAIE), 2014</em>. The project was further enhanced by integrating it with a web layer and establishing a connection between Arduino and server using serial communication.
+  link:
+
+- id: Traffic_Sign_Classification
+  title: Traffic Sign Classification
+  subtitle: Self-Driving Car Nanodegree, Udacity
+  tags: Deep Learning, Transfer Learning, Tensorflow, Keras, Python, Autonomous Driving
+  highlights: Built and trained a deep neural network to classify traffic signs, using TensorFlow. Experimented with different network architectures. Performed image pre-processing and validation to guard against overfitting.
+  link: https://github.com/sumitbinnani/CarND-Traffic-Sign-Classifier-Project
+
+- id: Predict__Predicting_Users_for_Advertising_
+  title: Predict (Predicting Users for Advertising)
+  subtitle: Media IQ Digital India Ltd.
+  tags: Machine Learning, Big Data, Naïve Bayes, Random Forest, K-Means Clustering, Behavioral Targeting, Hive, Spark MLlib, Spark Streaming, Kafka
+  highlights: The project aims at predicting users who would take desirable action after an advertisement is displayed to them, and target them in real time. The previous model was powered by <em>Naives Bayes Classifier</em> built by aggregating user&rsquo;s browsing behavior and geolocation. We migrated the model to <em>Random Forest</em> which provided about 10% uplift in the preliminary analysis. To combat memory issues stemming out of the large feature set while using <em>Random Forest</em>, we grouped the features by <em>K-Means</em> <em>Clustering</em> and used aggregated count of the group to train the model. Moving forward we would be incorporating temporal behavior in the model&rsquo;s feature set, and move to real-time prediction using Spark Streaming.
+  link:
+
+- id: Realtime_Reactor_Control_Simulator
+  title: Realtime Reactor Control Simulator
+  subtitle: Under Guidance of Dr. A. Tiwari, B.A.R.C., Mumbai
+  tags: Numerical Techniques, Euler’s Method, Ruge-Kutta Method, Control Systems, MATLAB, LabVIEW, NI PCI-6031e
+  highlights: The project aimed at stimulating dynamics of a nuclear reactor in real-time. To simulate the behavior of reactor, we solved <em>Point Kinetic Equation</em> using <em>Runge-Kutta Method</em> (which was selected after benchmarking it against other numerical techniques like <em>Euler Method</em> and <em>Newton-Rhapson Method</em> with an aim to optimize speed for bigger step sizes). We then designed feedback system by formulating the relationship between error and gain value, obtained by plotting optimum gain values vs. equilibrium power, and thus, empowered the system to take a decision based on a mathematical model. The system UI was built using LabVIEW and the data acquisition was done using NI PCI-6031e.
+  link:
+
+- id: Artificial_Intelligence_for_Game_Playing_Agent
+  title: Artificial Intelligence for Game Playing Agent
+  subtitle: Aritficial Intelligence Nanodegree, Udacity
+  tags: Artificial Intelligence, Minimax, Alpha-beta Pruning, Iterative Deepening, Python
+  highlights: Created an AI that beats human opponents in the game of Isolation using Minimax, Alpha-Beta Search, and Iterative Deepening.
+  link: https://github.com/sumitbinnani/AIND-Isolation
+
+- id: Air_Cargo_Transport_Planning
+  title: Air Cargo Transport Planning
+  subtitle: Aritficial Intelligence Nanodegree, Udacity
+  tags: Artificial Intelligence, A* Heuristics, Planning, Python
+  highlights: Used logic and planning techniques to create an AI that finds the most efficient route to route cargo around the world to their respective destinations. This project used a combination of propositional logic and search along with A* heuristics to find optimal planning solutions.
+  link: https://github.com/sumitbinnani/AIND-Planning
+
+- id: Lane_Finding
+  title: Lane Finding
+  subtitle: Self-Driving Car Nanodegree, Udacity
+  tags: Computer Vision, Image Processing, OpenCV, Python, Autonomous Driving
+  highlights: Built an advanced lane-finding algorithm using distortion correction, image rectification, color transforms, and gradient thresholding. Identified lane curvature and vehicle displacement. Overcame environmental challenges such as shadows and pavement changes.
+  link: https://github.com/sumitbinnani/CarND-Advanced-Lane-Lines
+
+- id: Pupil_Detection_for_Gaze_Tracking
+  title: Pupil Detection for Gaze Tracking
+  subtitle: Oracle India Inc. (Hackathon)
+  tags: Pupil Detection, Support Vector Machines, Kalman Filter, Python, OpenCV, scikit-learn, pandas
+  highlights: The aim of the project was to generate heatmap by tracking user&rsquo;s gaze on screen. We implemented gaze tracking system by implementing pupil capturing using eye center localization as proposed by Timm F. and Erhardt B. in their paper <em>Accurate Eye Centre Localisation by Means of Gradients</em> <em>VISAPP 11 (2011)</em> and later trained SVM model to track user&rsquo;s gaze on screen. The output by SVM model was wavy and to get a smoother distribution, we later added unimodal probability distribution obtained by Kalman Filter.
+  link:
+
+- id: Extraction_of_Biomedical_Implant
+  title: Extraction of Biomedical Implant
+  subtitle: GlobalLogic India Pvt. Ltd.
+  tags: Biomedical Imaging, Image Processing, Pattern Matching, Morphological Transformations, MATLAB, OpenCV, Android SDK
+  highlights: At GlobalLogic, I worked for one of the top-3 medical technological conglomerates in the world, and worked on the development of image processing pipeline for extraction of the biomedical implant from the x-ray. The task was preceded by denoising image using a median filter, and improving contrast in an image by applying adaptive histogram equalization. The denoised-contrast-enhanced image was then passed to morphological filters to find possible candidates for the implant, and finally, the candidates were narrowed down using pattern matching (on image descriptors). The final decision still to select the position of implant still lied with the operator. The prototyping of the approach was done using MATLAB, and the code was later ported to Android.
+  link:
+
+- id: Geocleansing_of_Location_Data
+  title: Geocleansing of Location Data
+  subtitle: Oracle India Inc. (Hackathon)
+  tags: Natural Language Processing, Phonetic Algorithm, Soundex, Fuzzy Logic, PLSQL
+  highlights: The project aimed at cleansing massive geographical datasets to get rid of typographical errors and duplicate records. I initially found similar records by using <em>Levenshtein Distance</em> as similarity matrix, however, this led to a high number of false positives (about 30% of predicted duplicates). To tighten the false positives, I later implemented fuzzy logic using <em>Levenshtein Distance</em>, <em>Soundex</em>, and <em>New York State Identification and Intelligence System</em>. The accuracy of the model was further enhanced by imposing hierarchy constraints on locations (e.g. only cities in same states would be considered for matching, and the states should have been already cleaned before proceeding with cities). The precision for the tool was <strong>88%</strong>, with a miss of <strong>4%</strong>.
+  link:
+
+- id: Recreation_of_Virtual_3D_World_from_SLAM_Map
+  title: Recreation of Virtual 3D-World from SLAM Map
+  subtitle: Under Guidance of Prof. Z. Moussavi and Dr. Ahmad Byagowi, University of Manitoba, Canada
+  tags: Virtual Reality, Image Processing, Morphological Transformation, OpenCV, Python
+  highlights: The project aimed at a recreation of virtual 3d-world from the SLAM Map obtained using Laser-SLAM. The task was accomplished by denoising the image by the median filter to remove speckles, and Gaussian Blur followed by contour detection. The detected contours were then scaled and used to obtain the position of walls to be recreated in Virtual World.
+  link:
+
+- id: Virtual_Immersive_Cognitive_Exercises
+  title: Virtual Immersive Cognitive Exercises
+  subtitle: Under Guidance of Prof. Z. Moussavi and Dr. Ahmad Byagowi, University of Manitoba, Canada
+  tags: Virtual Reality, Game Engine, Collision Detection, Electro-oculography, C, C++, Oculus Rift
+  highlights: Worked on a head mounted tracking system for spatial capability assessment of humans. As part of the project, we developed Virtual Immersive Cognitive Exercises for Alzheimer and Dementia&rsquo;s patients using Oculus Rift as head mounted gear, and VR chair integrated with a joystick to move around the virtual world. For stabilizing the rendered content, I also worked on electro-oculography to understand eye-movements while walking with Oculus Rift. We also worked on the creation of a few neuro-rehabilitation games for the treatment of people who have visual processing problems.
+  link:
+
+- id: Histogram_Equalization_for_Facial_Features_Extraction
+  title: Histogram Equalization for Facial Features Extraction
+  subtitle: Under guidance of Dr. Sanjay Singh, CEERI, Pilani
+  tags: Image Processing, Computer Vision, Contrast Enhancement, Adaptive Histogram Equalization, C, MATLAB, Python, OpenCV
+  highlights: The project aimed at developing robust image processing pipeline for enhancing contrast and edges in the facial image as a precursor to facial feature extraction. The task was accomplished by implementing <em>Contrast Limited Adaptive Histogram Equalization (CLAHE)</em>. The image so obtained was noisy and to suppress the same, the CLAHE was followed by applying <em>Bidirectional Weighted Median Filter</em>. The Proof-of-Concept was tested using MATLAB and Python, and the code was later ported to VHDL for FPGA programming.
+  link:
+
+- id: Panorama__Image_Stitching
+  title: "Panorama: Image Stitching"
+  subtitle: Self-Motivated Project
+  tags: Image Processing, ORB Detector, Pattern Recognition, Python, OpenCV
+  highlights: Used Oriented FAST and Rotated BRIEF for keypoint extraction in individual images and matched the descriptors using FlannBasedMatcher to stitch the images.
+  link:
+
+- id: Image_Denoising_using_Deep_Learning_and_Artificial_Neural_Networks
+  title: Image Denoising using Deep Learning and Artificial Neural Networks
+  subtitle: Self-Motivated Project
+  tags: Computer Vision, Image Processing, Artificial Intelligence, MATLAB
+  highlights: For a given dataset of images of scanned text, that has seen better days, removed noise using Artificial Neural Networks. Achieved decrease in error rate for OCR by about 60% as compared to unprocessed image.
+  link:
+
+- id: Finger_Print_Recognition_using_BLPOC_Algorithm
+  title: Finger Print Recognition using BLPOC Algorithm
+  subtitle: Under guidance of Ms. Vinita Tiwari, BITS Pilani
+  tags: Image Processing, Pattern Recognition, Correlation, Python, MATLAB, OpenCV
+  highlights: Implemented a Band Limited Phase Only Correlation (BLPOC) Fingerprint Matching Algorithm for Fingerprint Recognition.
+  link:
+
+- id: Finger_Point_Detection_for_Human_Computer_Interaction
+  title: Finger Point Detection for Human Computer Interaction
+  subtitle: Under guidance of Dr. Sanjay Singh, CEERI, Pilani
+  tags: Computer Vision, Image Processing, Microprocessor Programming, Hardware Interfacing, Arduino, OpenCV, Python
+  highlights: Developed a low-cost module for finger point detection using OpenCV library for Human Computer Interaction. The module could be used to perform click and point operations on Projector’s Screen
+  link:
+
+- id: Unit_Commitment__Optimizing_Operation_Schedule_for_Power_Generation
+  title: "Unit Commitment: Optimizing Operation Schedule for Power Generation"
+  subtitle: "Coursewok: Power System, BITS Pilani"
+  tags: Mathematical Modelling, Unit Commitment, Dynamic Programming, Lagrange’s Relaxation, MATLAB
+  highlights: The project aimed at determining the operation schedule for generating units for varying loads under different constraints and environments. The optimization problem was tackled by transforming it into an unconstrained optimization problem using <em>Lagrange&rsquo;s Relaxation</em>.
+  link:
+
+- id: Predicting_Building_Abandonment
+  title: Predicting Building Abandonment
+  subtitle: Data Science Specialization, Coursera
+  tags: Machine Learning, sckit-learn, pandas, Python
+  highlights: The project involved predicting building abandonment (&ldquo;blight&rdquo;) based on several public datasets including criminal incidents and permit violation. The datasets include latitude and longitude, which have been grouped together for identification of building. The grouping was accomplished by using <em>Google Reverse Geo-Coding API</em>, however considering millions of records to be fetched, the building had been approximated as 7-char <em>geohash</em> corresponding to the given latitude-longitude pair of incidents. The labeled dataset for training had been generated using blight-incidents dataset having incident marked as &lsquo;Dismantle&rsquo;. The code and report for the same can be found in following GitHub repository.
+  link: https://github.com/sumitbinnani/DataScienceAtScaleCapstoneProject
+
+- id: Billing_and_Inventory_Management_System
+  title: Billing and Inventory Management System
+  subtitle: As Technical Lead, SSMS BITS Pilani
+  tags: Software System, Database Management, Credit Management, C#, MySQL
+  highlights: The project aimed at developing a credit-based billing system for the student, and inventory management system for messes and canteens in BITS Pilani. The system was designed and developed after multiple interactions with mess workers (many of whom were deprived of educations), to enhance the user experience. The system helped in increasing transparency in the billing system and our team was recognized for the same by SSMS. The system is currently deployed in all the messes and canteens of BITS Pilani.
+  link:
+
+- id: AWS_Bot
+  title: AWS Bot
+  subtitle: Media IQ Digital India Ltd.
+  tags: Notification Bot, Productivity Tool, NodeJs
+  highlights: This is a Slack Bot which is used for monitoring AWS EMR Clusters spawned at the company, and provide notification in case the cluster is idle. It also automatically terminates clusters which had been idle for more than 2 hours. The bot had been paramount in cost saving with monthly saving greater than USD 1k monthly
+  link: 

@@ -1,0 +1,58 @@
+- location: La Jolla, CA
+  website: ''
+  endDate: Present
+  highlights:
+    - Created module to detect and track pedestrians and vehicles. Detection is done
+      using Yolov3 implemented in pytorch and tracking is done using Kalman Filter
+    - Created deep learning module for free space detection (semantic image segmentation)
+      using Fully Connected Network in Pytorch
+  position: Graduate Student Researcher
+  institution: UC San Diego
+
+- highlights:
+    - Created module to train various LSTM models using native Tensor-flow’s Estimator
+      API
+    - Wrote data pipeline, using Scalding and PySpark, to obtain clean and processed
+      muti-class multi-labelled tweet datasets
+  institution: Twitter Inc.
+  position: Intern
+  location: San Francisco, CA
+  startDate: Jun 2018
+  endDate: Sep 2018
+
+- highlights:
+    - Implemented a fast and scalable MapReduce Framework (Hadoop, Java) to perform
+      complex pattern matching
+    - Developed and deployed a fault tolerant behavioral ad-targeting pipeline to handle
+      over 50TB of data and obtained 10-15% uplift in many campaigns
+    - Developed a proof-of-concept of a scalable architecture for a Client-Side Behavioral
+      User Profiling for personalized ad-targeting thereby restricting exchange of user's
+      browsing data with ad-servers
+  position: Data Scientist
+  institution: Media IQ Digital
+  location: Bengaluru, India
+  startDate: Feb 2016
+  endDate: Aug 2017
+
+- highlights:
+    - 'Created an SQL utility (precision: 88%) for cleansing geographical datasets to
+    get rid of typographical errors and duplicate records using phonetic algorithm
+    like Soundex and NYSIIS'
+    - Worked on development of an MVVC framework to reduce server load and fetch and
+      display business reports dynamically by runtime modification of HTML nodes
+  institution: Oracle
+  position: Application Developer
+  location: Bengaluru, India
+  startDate: Jun 2015
+  endDate: Jan 2016
+
+- highlights:
+    - Worked on development of a 3D Game Engine in C++ for Oculus Rift for spatial capability
+      assessment of humans
+    - Created modules in OpenCV (Python) for recreation of virtual 3d-world from the
+      output obtained from a Laser-based SLAM
+  institution: University of Manitoba
+  position: Mitacs Research Intern
+  location: Winnipeg, Canada
+  startDate: May 2014
+  endDate: Aug 2014
