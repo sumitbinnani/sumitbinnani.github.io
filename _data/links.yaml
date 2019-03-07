@@ -1,0 +1,14 @@
+- name: Education
+  url: onlinecv.html
+  hash: education
+- name: Work
+  url: onlinecv.html
+  hash: work
+- name: Publications
+  url: onlinecv.html
+  hash: publications
+- name: Skills
+  url: onlinecv.html
+  hash: skills
+- name: Projects
+  url: projects.html
