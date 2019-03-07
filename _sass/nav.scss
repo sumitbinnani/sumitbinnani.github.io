@@ -1,9 +1,40 @@
+$navbar-color: rgba(51, 51, 51, 0);
+$navbar-color-menu: rgba(51, 51, 51, 0.7);
+
 .mynavbar {
-  background-color: rgba(51,51,51,0);
+  background-color: $navbar-color;
   height: 50px;
   width: 100%;
+  @include media-breakpoint-down(sm){
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.mynavbar > a, .mynavbar > button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.mynavbar .navbar-collapse {
+  @include media-breakpoint-down(sm) {
+    background-color: $navbar-color-menu;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
 }
 
 .mynavbar * {
   color: white !important;
+}
+
+.mynavbar .form-inline{
+  margin-left: 5px;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 5px;
+  }
+}
+
+.mynavbar .form-inline * {
+  color: #004085 !important;
 }
