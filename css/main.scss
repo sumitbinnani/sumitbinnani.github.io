@@ -4,6 +4,7 @@ $enable-gradients:true;
 @import "bootstrap/bootstrap";
 @import "header";
 @import "nav";
+@import "cv";
 
 html {
   scroll-behavior: smooth;
@@ -11,4 +12,27 @@ html {
 
 .header{
   background-image: url({{site.baseurl}}/images/cover.jpg);
+}
+
+.section{
+  position:relative;
+}
+
+.section h2.title {
+  padding-top: 10px;
+}
+
+
+.section h2[id].title {
+  margin-top: -80px;
+  padding-top: 80px;
+  position: absolute;
+}
+
+.details {
+  text-align: justify;
+  padding-bottom: 10px;
+  @include media-breakpoint-down(sm) {
+    text-align: unset;
+  }
 }

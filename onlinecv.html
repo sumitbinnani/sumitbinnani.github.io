@@ -1,0 +1,29 @@
+---
+layout: default
+type: header
+include_footer: true
+title: Online CV
+scripts: js/scrollspy.js
+---
+
+<div class="cv container-fluid">
+    <div class="cv-container container shadow bg-white rounded">
+        {% include section.html title="Education" link="education" %}
+        {% include cventry.html data=site.data.resume.education type="position" %}
+
+        {% include section.html title="Work Experience" link="work" %}
+        {% include cventry.html data=site.data.resume.work type="position" %}
+
+        {% include section.html title="Publications" link="publications" %}
+        {% include cventry.html data=site.data.resume.publications type="project" %}
+
+        {% include section.html title="Skills" link="skills" %}
+        <div class = "row">
+            <ul class="details">
+                {% for skill in site.data.resume.skills %}
+                <li><strong>{{skill.type}}:</strong>{{skill.entries}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

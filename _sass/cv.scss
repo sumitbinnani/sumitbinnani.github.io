@@ -1,0 +1,44 @@
+.cv {
+  margin-top: -100px;
+  padding-bottom: 40px;
+}
+
+.cv .cv-container {
+  z-index: 10;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  @include media-breakpoint-down(md) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.cventry .position h5, .cventry .position h6, .cventry .position-meta h6 {
+  @include media-breakpoint-down(sm) {
+    display: inline;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+  }
+}
+
+.cventry .position h5 + h6::before {
+  @include media-breakpoint-down(sm) {
+    content: ", ";
+  }
+}
+
+.cventry .position-meta {
+  @include media-breakpoint-up(sm) {
+    text-align: right;
+  }
+}
+
+.cventry .position-meta h6 + h6 {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
