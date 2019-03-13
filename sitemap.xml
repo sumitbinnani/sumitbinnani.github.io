@@ -10,4 +10,9 @@
         <loc>{{site.url}}{{site.baseurl}}/{{link.url}}{% if link.hash %}#{{link.hash}}{% endif%}</loc>
     </url>
     {% endfor %}
+    {% for item in site.data.resume.projects %}
+    <url>
+        <loc>{{site.url}}{{site.baseurl}}/projects.html?q={{item.title | url_encode}}</loc>
+    </url>
+    {% endfor %}
 </urlset>
