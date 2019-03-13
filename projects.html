@@ -35,7 +35,8 @@ scripts: js/project.js
                             <a class="btn btn-info btn-extra"
                                href="{{item.link}}"
                                target="_blank"
-                               itemprop="workExample">
+                               itemprop="workExample"
+                            itemtype="http://schema.org/CreativeWork">
                                 Link
                             </a>
                         {% endfor %}
@@ -43,8 +44,7 @@ scripts: js/project.js
                                data-original-title="Copy to Clipboard"
                                href="{{site.url}}{{site.baseurl}}{{page.url}}?q={{item.title | url_encode}}"
                                target="_blank"
-                               itemprop="url"
-                            ><i class="fa fa-share" aria-hidden="true"></i>&nbsp; Share
+                               itemprop="url"><i class="fa fa-share" aria-hidden="true"></i>&nbsp; Share
                             </a>
                         </span>
                     </div>
