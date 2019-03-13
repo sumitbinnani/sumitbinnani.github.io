@@ -17,13 +17,13 @@ scripts: js/project.js
         </div>
         <div class="row">
             {% for item in site.data.resume.projects %}
-            <div class="col-12 col-md-4 project-col" style="padding-bottom: 15px">
+            <div class="col-12 col-md-4 project-col" style="padding-bottom: 15px" itemscope itemtype="http://schema.org/CreativeWork">
                 <div class="card project-card" style="height: 100%;">
                     <div class="card-body">
-                        <h5 class="card-title">{{item.title}}</h5>
+                        <h5 class="card-title" itemprop="headline">{{item.title}}</h5>
                         <div class="card-matter">
-                            <p class="card-text text-truncate">{{item.highlights}}</p>
-                            <p class="card-text text-muted text-truncate"><strong>Keywords:</strong> {{item.tags}}</p>
+                            <p class="card-text text-truncate" itemprop="description">{{item.highlights}}</p>
+                            <p class="card-text text-muted text-truncate"><strong>Keywords:</strong> <span itemprop="keywords">{{item.tags}}</span></p>
                         </div>
                     </div>
                     <div class="card-footer">
@@ -33,7 +33,7 @@ scripts: js/project.js
                         <span class="extra-btn">
                             {% for link in item.link %}
                             <button class="btn btn-info btn-extra" type="button">
-                                <a href="{{item.link}}" target="_blank">Link</a>
+                                <a href="{{item.link}}" target="_blank" itemprop="url">Link</a>
                             </button>
                         {% endfor %}
                         </span>
