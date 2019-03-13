@@ -1,4 +1,30 @@
+function updateCopyButton(){
+    $('a.share').tooltip();
+    $('a.share').off('click');
+    $('a.share').click(function(event) {
+        event.preventDefault();
+        var oldText = $(this).attr('data-original-title');
+        $(this).attr({'data-original-title': 'Copied to Clipboard!'})
+            .tooltip('show');
+        $(this).on('shown.bs.tooltip', function (){
+            var elem = this;
+            var clipboard = $('.clipboard');
+            clipboard.val(elem.href);
+            clipboard.map(function () {
+                $(this).select();
+                document.execCommand('copy');
+            });
+            setTimeout(function() {
+                $(elem).tooltip('hide');
+                $(elem).off('shown.bs.tooltip');
+            }, 1500);
+        });
+        $(this).attr({'data-original-title': oldText});
+    });
+}
+
 function openModal(parentcard) {
+    a = parentcard;
     var title = parentcard.find('h5').text();
     var desc = parentcard.find('.card-matter');
     var btns = parentcard.find('.extra-btn');
@@ -9,8 +35,10 @@ function openModal(parentcard) {
     $('#projectModal .modal-body *').removeAttr('class');
 
     $('#projectModal .extra-btn').html(btns.html());
+    $('#projectModal .extra-btn').find('.float-right').removeClass('float-right');
 
     $('#projectModal').modal();
+    updateCopyButton();
 }
 
 function getParameterByName(name, url) {
@@ -24,20 +52,18 @@ function getParameterByName(name, url) {
 }
 
 function search(event) {
-    a = event;
     var regex = new RegExp(event.target.value.toLowerCase());
     var projectHolders = $('.project-col');
-    var total_count=0;
-    var selected_count=0;
+
     projectHolders.map(function (index, el) {
         if (!regex.test(el.innerText.toLowerCase())){
             $(el).hide();
-
         } else {
             $(el).show();
         }
     });
 }
+
 
 
 $(function () {
@@ -46,27 +72,7 @@ $(function () {
         openModal(parentcard);
     });
 
-    $('a.share').tooltip();
-
-    $('a.share').click(function(event) {
-        event.preventDefault();
-        var oldText = $(this).attr('data-original-title');
-        $(this).attr({'data-original-title': 'Copied to Clipboard!'})
-            .tooltip('show');
-        $(this).on('shown.bs.tooltip', function (){
-            var elem = this;
-            var clipboard = document.getElementById("clipboard")
-            clipboard.value = elem.href;
-            clipboard.select()
-            document.execCommand('copy');
-            setTimeout(function() {
-                $(elem).tooltip('hide');
-                $(elem).off('shown.bs.tooltip');
-            }, 1500);
-            $
-        });
-        $(this).attr({'data-original-title': oldText});
-    });
+    updateCopyButton();
 
     $('#search-bar').each(function() {
         var elem = $(this);
@@ -91,5 +97,6 @@ $(function () {
         $('#search-bar').val(query).keypress();
     }
 
+    $('#projectModal').on('hide.bs.modal', updateCopyButton);
 });
 
