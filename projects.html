@@ -12,7 +12,8 @@ scripts: js/project.js
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
             </div>
-            <input id="search-bar" class="form-control" placeholder="Filter Projects using Keywords, Projects, etc." type="search">
+            <input class="form-control" id="search-bar" placeholder="Filter Projects using Keywords, Projects, etc."
+                   type="search">
         </div>
         <div class="row">
             {% for item in site.data.resume.projects %}
@@ -30,12 +31,18 @@ scripts: js/project.js
                             Details
                         </button>
                         <span class="extra-btn">
-                    {% for link in item.link %}
-                    <button class="btn btn-info btn-extra" type="button">
-                        <a href="{{item.link}}" target="_blank">Link</a>
-                    </button>
-                    {% endfor %}
-                    </span>
+                            {% for link in item.link %}
+                            <button class="btn btn-info btn-extra" type="button">
+                                <a href="{{item.link}}" target="_blank">Link</a>
+                            </button>
+                        {% endfor %}
+                        </span>
+
+                        <a class="btn btn-info btn-extra float-right share"
+                           data-original-title="Copy to Clipboard"
+                           href="{{site.url}}{{site.baseurl}}{{page.url}}?q={{item.title | url_encode}}"
+                           target="_blank"><i class="fa fa-share" aria-hidden="true"></i>&nbsp; Share
+                        </a>
                     </div>
                 </div>
             </div>
@@ -64,4 +71,6 @@ scripts: js/project.js
         </div>
     </div>
 </div>
+
+<input id="clipboard" type="text"  style="display:none"/>
 

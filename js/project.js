@@ -46,6 +46,28 @@ $(function () {
         openModal(parentcard);
     });
 
+    $('a.share').tooltip();
+
+    $('a.share').click(function(event) {
+        event.preventDefault();
+        var oldText = $(this).attr('data-original-title');
+        $(this).attr({'data-original-title': 'Copied to Clipboard!'})
+            .tooltip('show');
+        $(this).on('shown.bs.tooltip', function (){
+            var elem = this;
+            var clipboard = document.getElementById("clipboard")
+            clipboard.value = elem.href;
+            clipboard.select()
+            document.execCommand('copy');
+            setTimeout(function() {
+                $(elem).tooltip('hide');
+                $(elem).off('shown.bs.tooltip');
+            }, 1500);
+            $
+        });
+        $(this).attr({'data-original-title': oldText});
+    });
+
     $('#search-bar').each(function() {
         var elem = $(this);
 
