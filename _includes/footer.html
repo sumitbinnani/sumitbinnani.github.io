@@ -19,6 +19,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 <script src="js/color.js"></script>
+<script src="js/particles.min.js"></script>
 
 <script>
     respondToVisibility = function (element, callback) {
@@ -52,5 +53,8 @@
         respondToVisibility(document.getElementById("header"), adjustNavbarOpacity);
     });
 
+</script>
 
+<script>
+    particlesJS.load('header', '{{site.url}}{{site.baseurl}}/js/particlesjs-config.json')
 </script>
