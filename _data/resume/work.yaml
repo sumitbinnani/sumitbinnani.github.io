@@ -1,6 +1,16 @@
+- location: San Francisco, CA
+  website: ''
+  startDate: Aug 2019
+  endDate: Present
+  highlights:
+    - Working with MLX team for unification of Recommender Systems across Twitter
+  position: Machine Learning Engineer II
+  institution: Twitter Inc.
+
 - location: La Jolla, CA
   website: ''
-  endDate: Present
+  startDate: Sep 2017
+  endDate: Jun 2019
   highlights:
     - Created module to detect and track pedestrians and vehicles. Detection is done
       using Yolov3 implemented in pytorch and tracking is done using Kalman Filter
