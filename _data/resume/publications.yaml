@@ -1,3 +1,10 @@
+- title: Lessons learned from deploying autonomous vehicles at UC San Diego
+  subtitle: Field and Service Robotics (Tokyo, JP, August 2019)
+  highlights:
+    - Discuss brief overview of the overall design and the design decisions for construction of vehicles for last-mile delivery
+    - Discuss design and challenges of vehicles for the micro-mobility challenge based on open source Autoware system
+    - Proposed requirements for roboust systems that include a robust control design, a shift towards increased use of image data over LiDAR data, handling of a richer set of vehicles / pedestrians in a last mile scenario, and overall system characterization and evaluation
+
 - title: Transfer of Expertise in Deep Neural Networks
   subtitle: VSS, Tampa FL, May 2019
   highlights:
@@ -9,9 +16,9 @@
   subtitle: International Conference on Business Analytics and Intelligence, IIM
     Bangalore, Dec. 2017
   highlights:
-    - Explore some of the feature selection and preprocessing techniques to make models robust and to reduce the size of the data
-    - Present a Deep Learning based approach to perform various tasks like traffic sign classification, object detection, semantic segmentation and lane detection
-    - We look at the techniques in Deep Learning that are currently being used in the industry for the successful navigation of autonomous vehicles
+    - Explored some of the feature selection and preprocessing techniques to make deep learning models robust
+    - Presented a Deep Learning based approach to perform various tasks like traffic sign classification, object detection, semantic segmentation and lane detection
+    - Explored the techniques in Deep Learning that are currently being used in the industry for the successful navigation of autonomous vehicles
 
 - title: Electronics Aid for Elder and Sick
   subtitle: Recent Advances and Innovations in Engineering, IEEE, Poornima University,
