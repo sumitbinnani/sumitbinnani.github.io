@@ -1,8 +1,9 @@
-- title: (Accepted) Transfer of Expertise in Deep Neural Networks
+- title: Transfer of Expertise in Deep Neural Networks
   subtitle: VSS, Tampa FL, May 2019
   highlights:
-    - The attention map used by the expert network has higher entropy, and smaller, local features than the novice networks (suggesting that the expert looks at multiple locations to make a classification decision). We define experts as systems that categorize stimuli at a subordinate level, and novices as systems that categorize the same stimuli at a coarser grain
-    - The attention map used by the expert can be used to train the novice, resulting in faster training and better performance. We consider this to be analogous to the expert telling the novice where to look for discriminative regions of the image
+    - Studied the attention map of expert and novice birdwatchers by modeling them as deep neural network (VGG-16) (experts is defined as systems that categorize stimuli at a subordinate level, and novices are defined as systems that categorize the same stimuli at a coarser grain)
+    - The attention map used by the expert network has higher entropy, and smaller, local features than the novice networks (suggesting that the expert looks at multiple locations to make a classification decision)
+    - The attention map used by the expert can be used to train the novice, resulting in faster training and better performance. This to be analogous to the expert telling the novice where to look for discriminative regions of the image
 
 - title: Applications of Deep Learning to Autonomous Vehicles
   subtitle: International Conference on Business Analytics and Intelligence, IIM
