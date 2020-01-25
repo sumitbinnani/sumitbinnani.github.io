@@ -1,8 +1,8 @@
 - title: Lessons learned from deploying autonomous vehicles at UC San Diego
   subtitle: Field and Service Robotics (Tokyo, JP, August 2019)
   highlights:
-    - Discuss brief overview of the overall design and the design decisions for construction of vehicles for last-mile delivery
-    - Discuss design and challenges of vehicles for the micro-mobility challenge based on open source Autoware system
+    - Discussed brief overview of the overall design and the design decisions for construction of vehicles for last-mile delivery
+    - Discussed design and challenges of vehicles for the micro-mobility challenge based on open source Autoware system
     - Proposed requirements for roboust systems that include a robust control design, a shift towards increased use of image data over LiDAR data, handling of a richer set of vehicles / pedestrians in a last mile scenario, and overall system characterization and evaluation
 
 - title: Transfer of Expertise in Deep Neural Networks
