@@ -20,10 +20,12 @@
   institution: UC San Diego
 
 - highlights:
-    - Created module to train various LSTM models using native Tensor-flow’s Estimator
-      API
-    - Wrote data pipeline, using Scalding and PySpark, to obtain clean and processed
-      muti-class multi-labelled tweet datasets
+    - Wrote data pipeline, using Scalding and PySpark, to obtain high-quality muti-class
+      multi-labelled tweet datasets
+    - Trained bi-LSTM models, using Tensorflow's Estimator API, to obtain tweet embeddings
+      by minimizing cross entropy loss for multi-class tweet classification
+    - Studied effectiveness and transfer-ability of the model by using the learned embedding
+      for different downstream tasks
   institution: Twitter Inc.
   position: Intern
   location: San Francisco, CA
@@ -31,8 +33,8 @@
   endDate: Sep 2018
 
 - highlights:
-    - Implemented a fast and scalable MapReduce Framework (Hadoop, Java) to perform
-      complex pattern matching
+    - Implemented a fast and scalable MapReduce Framework (Hadoop, Java) leveraging boolean logic
+      and cache to perform complex pattern matching obtaining over 120x speedup
     - Developed and deployed a fault tolerant behavioral ad-targeting pipeline to handle
       over 50TB of data and obtained 10-15% uplift in many campaigns
     - Developed a proof-of-concept of a scalable architecture for a Client-Side Behavioral
@@ -46,8 +48,8 @@
 
 - highlights:
     - 'Created an SQL utility (precision: 88%) for cleansing geographical datasets to
-    get rid of typographical errors and duplicate records using phonetic algorithm
-    like Soundex and NYSIIS'
+      get rid of typographical errors and duplicate records using phonetic algorithm
+      like Soundex and NYSIIS'
     - Worked on development of an MVVC framework to reduce server load and fetch and
       display business reports dynamically by runtime modification of HTML nodes
   institution: Oracle
