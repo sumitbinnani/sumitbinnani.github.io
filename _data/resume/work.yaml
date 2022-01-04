@@ -1,9 +1,19 @@
-- location: San Francisco, CA
+- location: Seattle, WA
   website: ''
-  startDate: Aug 2019
+  startDate: Nov 2021
   endDate: Present
   highlights:
-    - Working with MLX team for unification of Recommender Systems across Twitter
+    - Working with core NLP team at Twitter to develop content-based signals to be used in downstream products
+  position: Sr. Machine Learning Engineer
+  institution: Twitter Inc.
+
+- location: San Francisco, CA / Seattle, WA
+  website: ''
+  startDate: Aug 2019
+  endDate: Nov 2021
+  highlights:
+    - Worked on transformer based models to improve content based models at Twitter (Search Relevance, Spam Classification, etc.)
+    - Worked on model-based candidate generation for unification of Recommender Systems across Twitter
   position: Machine Learning Engineer II
   institution: Twitter Inc.
 
