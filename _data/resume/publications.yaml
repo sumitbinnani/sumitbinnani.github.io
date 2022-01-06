@@ -1,9 +1,22 @@
+- title: Lessons Learned addressing Dataset Bias in Model-Based Candidate Generation at Twitter
+  subtitle: KDD (San Diego, CA, August 2020)
+  highlights:
+    - Explore the dynamics of the dataset bias problem and then demonstrate how to use random sampling techniques to mitigate it
+    - Finally, in a novel application of fine-tuning, we show performance gains when applying our candidate generation system to Twitter's home timeline
+
 - title: Lessons learned from deploying autonomous vehicles at UC San Diego
   subtitle: Field and Service Robotics (Tokyo, JP, August 2019)
   highlights:
     - Discussed brief overview of the overall design and the design decisions for construction of vehicles for last-mile delivery
     - Discussed design and challenges of vehicles for the micro-mobility challenge based on open source Autoware system
     - Proposed requirements for roboust systems that include a robust control design, a shift towards increased use of image data over LiDAR data, handling of a richer set of vehicles / pedestrians in a last mile scenario, and overall system characterization and evaluation
+
+- title: Vision-based Autonomous Driving
+  subtitle: Master's Thesis (UC San Diego, Jun 2019)
+  highlights:
+    - Considering the drawbacks of the LiDARs, the availability of an alternate solution, and the recent progress of computer vision techniques in the last few years, proposed an architecture for vision-based autonomous driving.
+    - Outlined building blocks for the development of this vision-based architecture and described functionality of these blocks. Additionally, provided a brief overview of existing studies and research to implement these blocks.
+    - Furthermore, we discuss the design and implementation of a few of these blocks in the purview of the activities being undertaken at Autonomous Living Laboratory (AVL) at UC San Diego.
 
 - title: Transfer of Expertise in Deep Neural Networks
   subtitle: VSS, Tampa FL, May 2019
