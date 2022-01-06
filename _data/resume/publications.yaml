@@ -12,7 +12,7 @@
     - Proposed requirements for roboust systems that include a robust control design, a shift towards increased use of image data over LiDAR data, handling of a richer set of vehicles / pedestrians in a last mile scenario, and overall system characterization and evaluation
 
 - title: Vision-based Autonomous Driving
-  subtitle: Master's Thesis (UC San Diego, Jun 2019)
+  subtitle: Master's Thesis (UC San Diego, June 2019)
   highlights:
     - Considering the drawbacks of the LiDARs, the availability of an alternate solution, and the recent progress of computer vision techniques in the last few years, proposed an architecture for vision-based autonomous driving.
     - Outlined building blocks for the development of this vision-based architecture and described functionality of these blocks. Additionally, provided a brief overview of existing studies and research to implement these blocks.
