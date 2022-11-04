@@ -5,8 +5,8 @@
     {% for item in items %}
     {% if include.type == "position" %}
     <div class="position col-12 col-md-9">
-        <h5>{{item.position}}</h5>
-        {% if item.institution %}<h6>{{item.institution}}</h6>{% endif %}
+        <h6>{{item.position}}</h6>
+        {% if item.institution %}<h6 class="text-muted">{{item.institution}}</h6>{% endif %}
     </div>
     <div class="position-meta col-12 col-md-3 text-muted">
         {% if item.startDate or item.endDate %}
