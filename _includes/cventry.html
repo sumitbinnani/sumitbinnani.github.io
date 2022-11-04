@@ -20,6 +20,11 @@
         {% if item.subtitle %}<h6 class="text-muted">{{item.subtitle}}</h6>{% endif %}
     </div>
     {% endif %}
+    {% if item.description %}
+    <div class="details col-12">
+        {{ item.description }}
+    </div>
+    {% endif %}
     {% if item.highlights %}
     <div class="details col-12">
         <ul> {% for highlight in item.highlights %}
