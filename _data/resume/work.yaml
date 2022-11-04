@@ -5,83 +5,65 @@
   endDate: Present
   description: Usual works involves collaborating with different product teams to train and deploy model that incorporates content-based signals, mentor and guide team members, and look out for new product improvement opportunities. Working on improving user-tweet recommendation, search relevance, and generic model serving infrastructure.
 
-- location: Seattle, WA
-  website: ''
-  startDate: Nov 2021
-  endDate: Present
-  highlights:
-    - Working with core NLP team at Twitter to develop content-based signals to be used in downstream products
-  position: Sr. Machine Learning Engineer
+- position: Machine Learning Engineer -II
   institution: Twitter Inc.
-
-- location: San Francisco, CA / Seattle, WA
-  website: ''
+  location: San Francisco, CA / Seattle, WA
   startDate: Aug 2019
   endDate: Nov 2021
-  highlights:
-    - Worked on transformer based models to improve content based models at Twitter (Search Relevance, Spam Classification, etc.)
-    - Worked on model-based candidate generation for unification of Recommender Systems across Twitter
-  position: Machine Learning Engineer II
-  institution: Twitter Inc.
+  description: Worked with different product teams to improve product metrics for user-user recommendation, tweet-tweet recommendation, and user-tweet recommendation using Model-Based Candidate Generation (MBCG) and ANN.
 
-- location: La Jolla, CA
-  website: ''
-  startDate: Sep 2017
+- position: Graduate Student Researcher / Graduate Student Assistant
+  institution: University of California San Diego
+  location: La Jolla, CA
+  startDate: Oct 2017
   endDate: Jun 2019
-  highlights:
-    - Created module to detect and track pedestrians and vehicles. Detection is done
-      using Yolov3 implemented in pytorch and tracking is done using Kalman Filter
-    - Created deep learning module for free space detection (semantic image segmentation)
-      using Fully Connected Network in Pytorch
-  position: Graduate Student Researcher
-  institution: UC San Diego
+  description: Performed extensive literature review and designed and documented a generic vision-based architecture for autonomous driving vehicle in form of a thesis. Also, served as a teaching assistant for various courses in data science and machine learning.
 
-- highlights:
-    - Wrote data pipeline, using Scalding and PySpark, to obtain high-quality muti-class
-      multi-labelled tweet datasets
-    - Trained bi-LSTM models, using Tensorflow's Estimator API, to obtain tweet embeddings
-      by minimizing cross entropy loss for multi-class tweet classification
-    - Studied effectiveness and transfer-ability of the model by using the learned embedding
-      for different downstream tasks
-  institution: Twitter Inc.
-  position: Intern
+- position: Software Engineering Intern
+  institution: Twitter Inc. (employed by Pro Unlimited
   location: San Francisco, CA
   startDate: Jun 2018
   endDate: Sep 2018
+  description: Worked with Cortex - the team behind Machine Learning Infrastructure at Twitter - to obtain representation of tweets based on its content. Worked on low memory footprint models to enable on-device machine learning inference capabilities.
 
-- highlights:
-    - Implemented a fast and scalable MapReduce Framework (Hadoop, Java) leveraging boolean logic
-      and cache to perform complex pattern matching obtaining over 120x speedup
-    - Developed and deployed a fault tolerant behavioral ad-targeting pipeline to handle
-      over 50TB of data and obtained 10-15% uplift in many campaigns
-    - Developed a proof-of-concept of a scalable architecture for a Client-Side Behavioral
-      User Profiling for personalized ad-targeting thereby restricting exchange of user's
-      browsing data with ad-servers
-  position: Data Scientist
+- position: Data Scientist
   institution: Media IQ Digital
   location: Bengaluru, India
   startDate: Feb 2016
   endDate: Aug 2017
+  description: Developed predictive and behavorial user models for ad recommendation. Also, designed and developed optimized query engine for churning petabytes of data. Proposed and developed a poof-of-concept for a privacy-focused cookieless architecture for behavorial ad targeting.
 
-- highlights:
-    - 'Created an SQL utility (precision: 88%) for cleansing geographical datasets to
-      get rid of typographical errors and duplicate records using phonetic algorithm
-      like Soundex and NYSIIS'
-    - Worked on development of an MVVC framework to reduce server load and fetch and
-      display business reports dynamically by runtime modification of HTML nodes
-  institution: Oracle
-  position: Application Developer
+- position: Application Developer
+  institution: Oracle, Bengaluru, India
   location: Bengaluru, India
   startDate: Jun 2015
-  endDate: Jan 2016
+  endDate: Feb 2016
+  description: Developed application to cleanse geographical datasets to get rid of typographical errors and duplicate records using phonetic algorithm. Worked on development of MVVC framework with focus on client-side dynamic HTML node.
 
-- highlights:
-    - Worked on development of a 3D Game Engine in C++ for Oculus Rift for spatial capability
-      assessment of humans
-    - Created modules in OpenCV (Python) for recreation of virtual 3d-world from the
-      output obtained from a Laser-based SLAM
-  institution: University of Manitoba
-  position: Mitacs Research Intern
-  location: Winnipeg, Canada
-  startDate: May 2014
+- position: Intern, , Nagpur
+  institution: Globallogic India Pvt. Ltd.
+  location:  Nagpur, India
+  startDate: Jan 2015
+  endDate: Jun 2015
+  description: Worked for one of the world’s top medical device companies. Developed image processing libraries for enhancement and segmentation of biomedical imaging and optimized them to run on mobile devices. Also, developed APIs to create animated views for bar/area/line charts for Android Platform.
+
+- position: Mitacs Globalink Research Intern
+  institution: Globallogic India Pvt. Ltd.
+  location:  Nagpur, India
+  startDate: May 2014 
   endDate: Aug 2014
+  description: Worked on development of 3D Immersive Cognitive Exercises for patients of Alzheimer and Dementia patients (using Oculus Rift Development Kit) for spatial capability assessment of humans. Implemented logic to make 3D World from 2D SLAM Map. Proposed, designed, and developed a new collision detection module for the Game Engine.. Proposed, designed, and developed a new collision detection Mmdule for the Game Engine.
+
+- position: Teaching Assistant
+  institution: Birla Institute of Technology and Science, Pilani (BITS Pilani)
+  location:  Pilani, India
+  startDate: Jan 2014
+  endDate: Dec 2014
+  description: Helped with preparing course material and lectures and conducted regular lab sessions for course on Microprocessor - Interfacing and Programming (x86 architecture and assembly language) and Analog and Digital VLSI Design.
+
+- position: Project Trainee
+  institution: Bhabha Atomic Research Center (B.A.R.C.)
+  location:  Mumbai, India
+  startDate:  May 2013 
+  endDate: Jul 2013
+  description: Implemented a simulator demonstrating effect of reactivity control rod’s height on nuclear power generated based on Point Kinetic Equation (set of nonlinear differential equations), and designed and implemented Data Acquisition System (DAS) for the simulator.
