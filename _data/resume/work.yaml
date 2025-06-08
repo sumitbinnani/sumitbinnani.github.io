@@ -1,8 +1,15 @@
 - position: Sr. Machine Learning Engineer
+  institution: Reddit, Inc.
+  location: USA
+  startDate: Mar 2023
+  endDate: Present
+  description: Bulding ML Systems for Reddit 
+  
+- position: Sr. Machine Learning Engineer
   institution: Twitter Inc.
   location: Seattle, WA
   startDate: Nov 2021
-  endDate: Present
+  endDate: Mar 2023
   description: Usual works involves collaborating with different product teams to train and deploy model that incorporates content-based signals, mentor and guide team members, and look out for new product improvement opportunities. Working on improving user-tweet recommendation, search relevance, and generic model serving infrastructure.
 
 - position: Machine Learning Engineer -II
