@@ -1,5 +1,5 @@
 # Jekyll Based Online Portfolio
-Jekyll Website for personal webpage based on bootstrap.
+Jekyll Website for personal webpage based on bootstrap
 
 ### Features
 * Responsive layout
